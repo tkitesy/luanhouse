@@ -1,0 +1,1319 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      六安真实房源、六安中介诚信、六安房源核验 | 六安市房产交易信息服务网|存量房
+    </title>
+    <link
+      rel="favicon icon "
+      type="images/x-icon"
+      href="../shared/imgs/favicon.ico"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link href="css/style-blue.css" rel="stylesheet" />
+    <link
+      href="css/rc-table.css"
+      rel="stylesheet"
+    />
+    <style>
+      .slick-slide {
+        opacity: 1 !important;
+      }
+
+      .ranking {
+        height: 490px;
+      }
+    </style>
+
+    <script
+      src="../shared/js/jquery-1.12.4.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script src="../shared/js/layout.js"></script>
+
+    <!--[if lte IE 9]>
+      <link rel="stylesheet" href="/src/css/ie8.css" />
+      <script src="/src/js/PIE_IE678.js"></script>
+      <script src="/src/js/html5shiv.min.js"></script>
+      <script src="/src/js/rem.min.js"></script>
+      <script src="/src/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="page-home">
+    <!--[if lte IE 9]>
+      <DIV class="compatibility-warning" id="compatibility-warning"
+        ><DIV class="compatibility-warning__content">
+          <H3 class="compatibility-warning__title"
+            >您的浏览器版本太低啦，会严重影响浏览体验</H3
+          >
+          <P>如果您正在使用多核浏览器（如360、QQ浏览器）请切换到极速模式</P>
+          <DIV class="compatibility-warning__browser">
+            <P class="compatibility-warning__browser__title">推荐浏览器</P>
+            <UL class="compatibility-warning__browser__recommend">
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--ie"
+                ></I
+                ><A
+                  href="https://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads"
+                  >IE10以上</A
+                >
+              </LI>
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--edge"
+                ></I
+                ><A href="https://www.microsoft.com/en/windows/microsoft-edge"
+                  >微软edge</A
+                >
+              </LI>
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--firefox"
+                ></I
+                ><A href="https://www.firefox.com/">Firefox</A>
+              </LI>
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--chrome"
+                ></I
+                ><A
+                  href="https://www.google.com/chrome/browser/desktop/index.html?"
+                  >Chrome</A
+                >
+              </LI>
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--safari"
+                ></I
+                ><A href="https://www.apple.com/safari">Safari</A>
+              </LI></UL
+            ><A
+              class="compatibility-warning__browser__continue"
+              onclick="closeWarning()"
+              >继续在当前浏览器访问</A
+            >
+          </DIV></DIV
+        ></DIV
+      >
+    <![endif]-->
+
+    <div class="cnnbfdc-header">
+      <div class="cnnbfdc-header__top">
+        <div class="layout-center">
+          <div class="cnnbfdc-header__top__left">
+            <img src="../shared/imgs/logo.png" />
+          </div>
+          <ul class="cnnbfdc-header__top__center">
+            <li><a href="//www.cnnbfdc.com">首页</a></li>
+            <li><a href="//newhouse.cnnbfdc.com">商品房</a></li>
+            <li class="active"><a href="//esf.cnnbfdc.com">二手房</a></li>
+            <li><a href="//esf.cnnbfdc.com/building">住房租赁</a></li>
+            <li><a href="//cx.cnnbfdc.com">信用评价</a></li>
+          </ul>
+          <ul class="cnnbfdc-header__top__right">
+            <li>
+              <a href="//www.cnnbfdc.com/querytools"
+                ><i class="icon-compass"></i>办事大厅</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cnnbfdc-header__center">
+        <div class="layout-center">
+          <ul name="ul_esf" class="cnnbfdc-header__center__top">
+            <li name="index"><a href="/">二手房首页</a></li>
+            <li name="houselist"><a href="/home/houselist">房源</a></li>
+            <li name="contract"><a href="/contract">信息公示</a></li>
+            <li name="verification-code">
+              <a href="/verification-code">房源验真</a>
+            </li>
+            <li name="esf-query"><a href="/esf-query">合同查询</a></li>
+          </ul>
+
+          <div class="cnnbfdc-header__center__footer">
+            <form action="/home/houselist" id="optionSearch">
+              <input
+                type="search"
+                name="q"
+                placeholder="小区名称或者房源核验码"
+                class="search__textfield"
+              />
+              <input type="submit" value="搜索" class="search__submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-center">
+      <div>
+        <p
+          style="font-size: 14px;color: #999;text-align: right;margin: 10px 0;"
+        >
+          累计时间从2017年5月1日开始到昨日截止
+        </p>
+      </div>
+      <div class="total-statistics">
+        <div class="total-statistics__item">
+          <i class="icons icons--total-agency"></i>
+          <p>经纪机构<br /><span>2319</span> 家</p>
+        </div>
+        <div class="total-statistics__item">
+          <i class="icons icons--total-middleman"></i>
+          <p>经纪人员<br /><span>13423</span> 人</p>
+        </div>
+        <div class="total-statistics__item">
+          <i class="icons icons--total-house"></i>
+          <p>累计有效挂牌<br /><span>289078</span> 套</p>
+        </div>
+        <div class="total-statistics__item">
+          <i class="icons icons--total-auction"></i>
+          <p>累计有效成交<br /><span>70028</span> 套</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-center" style="overflow:hidden;margin-bottom:20px">
+      <div class="headline">
+        <div class="headline__left">
+          <h4>最新房源</h4>
+        </div>
+        <div class="headline__right">
+          <a href="/home/houselist">查看更多+</a>
+        </div>
+      </div>
+
+      <div
+        class="view-housing-search"
+        style="overflow:hidden"
+        id="sale_listing_view"
+      >
+        <div class="views-row">
+          <a
+            href="/home/details?housingSaleListingGUID=72bfc9f3-6b74-e911-8da7-005056b87983"
+          >
+            <div class="house-information ">
+              <div class="house-information__select-icon"></div>
+              <div class="house-information__title">
+                <span class="house-information__title__number"
+                  >房源核验码：201905123302120043</span
+                >
+                <span class="house-information__title__area">鄞州区</span>
+              </div>
+              <div class="house-information__details">
+                <div class="house-information__agencies">
+                  <div class="listing-count">
+                    由 <strong>1</strong> 家机构挂牌
+                  </div>
+                </div>
+                <div class="house-information__area">
+                  <h2 class="house-information__area__community-name">
+                    杉杉苑
+                  </h2>
+                  <div class="house-information__area__sqm">
+                    <span>约 </span><strong>114</strong><span> 平米</span>
+                  </div>
+                </div>
+                <div class="house-information__detail">
+                  <div class="field-house-information-detail">
+                    <ul class="house-information__detail__list">
+                      <li>
+                        <i class="icons icons--structure"></i>
+                        <span>住宅</span>
+                      </li>
+                      <li>
+                        <i class="icons icons--floor"></i>
+                        <span>共 7 层</span>
+                      </li>
+                      <li>
+                        <i class="icons icons--direction"></i>
+                        <span
+                          class="mortgage-state"
+                          data-right="fb0c2d51-f62b-e711-8564-b499bab93608"
+                        ></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="field-post-date">
+                    <div class="house-post-date">2019-05-12</div>
+                  </div>
+                </div>
+              </div>
+              <div class="house-information__price">
+                <div class="house-information__price__total">
+                  <strong>273</strong><span> 万</span>
+                </div>
+                <div class="house-information__price__sqm">
+                  平均 2.4 万元/平方米
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="views-row">
+          <a
+            href="/home/details?housingSaleListingGUID=ffef55ec-6b74-e911-8da7-005056b87983"
+          >
+            <div class="house-information ">
+              <div class="house-information__select-icon"></div>
+              <div class="house-information__title">
+                <span class="house-information__title__number"
+                  >房源核验码：201905123302810001</span
+                >
+                <span class="house-information__title__area">余姚市</span>
+              </div>
+              <div class="house-information__details">
+                <div class="house-information__agencies">
+                  <div class="listing-count">
+                    由 <strong>1</strong> 家机构挂牌
+                  </div>
+                </div>
+                <div class="house-information__area">
+                  <h2 class="house-information__area__community-name">
+                    万达豪庭
+                  </h2>
+                  <div class="house-information__area__sqm">
+                    <span>约 </span><strong>100</strong><span> 平米</span>
+                  </div>
+                </div>
+                <div class="house-information__detail">
+                  <div class="field-house-information-detail">
+                    <ul class="house-information__detail__list">
+                      <li>
+                        <i class="icons icons--structure"></i>
+                        <span>住宅</span>
+                      </li>
+                      <li>
+                        <i class="icons icons--floor"></i>
+                        <span>共 23 层</span>
+                      </li>
+                      <li>
+                        <i class="icons icons--direction"></i>
+                        <span
+                          class="mortgage-state"
+                          data-right="b49a2503-a79f-e711-b532-b499bab93608"
+                        ></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="field-post-date">
+                    <div class="house-post-date">2019-05-12</div>
+                  </div>
+                </div>
+              </div>
+              <div class="house-information__price">
+                <div class="house-information__price__total">
+                  <strong>165</strong><span> 万</span>
+                </div>
+                <div class="house-information__price__sqm">
+                  平均 1.7 万元/平方米
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="views-row">
+          <a
+            href="/home/details?housingSaleListingGUID=6870d2e5-6b74-e911-8da7-005056b87983"
+          >
+            <div class="house-information ">
+              <div class="house-information__select-icon"></div>
+              <div class="house-information__title">
+                <span class="house-information__title__number"
+                  >房源核验码：201905123302030017</span
+                >
+                <span class="house-information__title__area">海曙区</span>
+              </div>
+              <div class="house-information__details">
+                <div class="house-information__agencies">
+                  <div class="listing-count">
+                    由 <strong>1</strong> 家机构挂牌
+                  </div>
+                </div>
+                <div class="house-information__area">
+                  <h2 class="house-information__area__community-name">
+                    薛家新家园
+                  </h2>
+                  <div class="house-information__area__sqm">
+                    <span>约 </span><strong>121</strong><span> 平米</span>
+                  </div>
+                </div>
+                <div class="house-information__detail">
+                  <div class="field-house-information-detail">
+                    <ul class="house-information__detail__list">
+                      <li>
+                        <i class="icons icons--structure"></i>
+                        <span>住宅</span>
+                      </li>
+                      <li>
+                        <i class="icons icons--floor"></i>
+                        <span>共 5 层</span>
+                      </li>
+                      <li>
+                        <i class="icons icons--direction"></i>
+                        <span
+                          class="mortgage-state"
+                          data-right="d838f82c-4e5b-e911-aaa3-b499bab93608"
+                        ></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="field-post-date">
+                    <div class="house-post-date">2019-05-12</div>
+                  </div>
+                </div>
+              </div>
+              <div class="house-information__price">
+                <div class="house-information__price__total">
+                  <strong>235</strong><span> 万</span>
+                </div>
+                <div class="house-information__price__sqm">
+                  平均 1.9 万元/平方米
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="views-row">
+          <a
+            href="/home/details?housingSaleListingGUID=2fcfc02e-6b74-e911-8da7-005056b87983"
+          >
+            <div class="house-information ">
+              <div class="house-information__select-icon"></div>
+              <div class="house-information__title">
+                <span class="house-information__title__number"
+                  >房源核验码：201905013302120016</span
+                >
+                <span class="house-information__title__area">鄞州区</span>
+              </div>
+              <div class="house-information__details">
+                <div class="house-information__agencies">
+                  <div class="listing-count">
+                    由 <strong>2</strong> 家机构挂牌
+                  </div>
+                </div>
+                <div class="house-information__area">
+                  <h2 class="house-information__area__community-name">
+                    安居幸福苑
+                  </h2>
+                  <div class="house-information__area__sqm">
+                    <span>约 </span><strong>114</strong><span> 平米</span>
+                  </div>
+                </div>
+                <div class="house-information__detail">
+                  <div class="field-house-information-detail">
+                    <ul class="house-information__detail__list">
+                      <li>
+                        <i class="icons icons--structure"></i>
+                        <span>住宅</span>
+                      </li>
+                      <li>
+                        <i class="icons icons--floor"></i>
+                        <span>共 6 层</span>
+                      </li>
+                      <li>
+                        <i class="icons icons--direction"></i>
+                        <span
+                          class="mortgage-state"
+                          data-right="a38a7e51-f62b-e711-8564-b499bab93608"
+                        ></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="field-post-date">
+                    <div class="house-post-date">2019-05-12</div>
+                  </div>
+                </div>
+              </div>
+              <div class="house-information__price">
+                <div class="house-information__price__total">
+                  <strong>302</strong> ~ <strong>306</strong><span> 万元</span>
+                </div>
+                <div class="house-information__price__sqm">
+                  平均 2.7 万元/平方米
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="views-row">
+          <a
+            href="/home/details?housingSaleListingGUID=65b16852-5f74-e911-8da7-005056b87983"
+          >
+            <div class="house-information ">
+              <div class="house-information__select-icon"></div>
+              <div class="house-information__title">
+                <span class="house-information__title__number"
+                  >房源核验码：201905123302120030</span
+                >
+                <span class="house-information__title__area">鄞州区</span>
+              </div>
+              <div class="house-information__details">
+                <div class="house-information__agencies">
+                  <div class="listing-count">
+                    由 <strong>2</strong> 家机构挂牌
+                  </div>
+                </div>
+                <div class="house-information__area">
+                  <h2 class="house-information__area__community-name">
+                    中海国际
+                  </h2>
+                  <div class="house-information__area__sqm">
+                    <span>约 </span><strong>102</strong><span> 平米</span>
+                  </div>
+                </div>
+                <div class="house-information__detail">
+                  <div class="field-house-information-detail">
+                    <ul class="house-information__detail__list">
+                      <li>
+                        <i class="icons icons--structure"></i>
+                        <span>住宅</span>
+                      </li>
+                      <li>
+                        <i class="icons icons--floor"></i>
+                        <span>共 33 层</span>
+                      </li>
+                      <li>
+                        <i class="icons icons--direction"></i>
+                        <span
+                          class="mortgage-state"
+                          data-right="cd11f834-9f67-e711-8a69-b499bab93608"
+                        ></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="field-post-date">
+                    <div class="house-post-date">2019-05-12</div>
+                  </div>
+                </div>
+              </div>
+              <div class="house-information__price">
+                <div class="house-information__price__total">
+                  <strong>270</strong> ~ <strong>270</strong><span> 万元</span>
+                </div>
+                <div class="house-information__price__sqm">
+                  平均 2.6 万元/平方米
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="views-row">
+          <a
+            href="/home/details?housingSaleListingGUID=028a992e-e85f-e911-8da6-005056b87983"
+          >
+            <div class="house-information ">
+              <div class="house-information__select-icon"></div>
+              <div class="house-information__title">
+                <span class="house-information__title__number"
+                  >房源核验码：201904163302120024</span
+                >
+                <span class="house-information__title__area">鄞州区</span>
+              </div>
+              <div class="house-information__details">
+                <div class="house-information__agencies">
+                  <div class="listing-count">
+                    由 <strong>6</strong> 家机构挂牌
+                  </div>
+                </div>
+                <div class="house-information__area">
+                  <h2 class="house-information__area__community-name">
+                    丁香苑
+                  </h2>
+                  <div class="house-information__area__sqm">
+                    <span>约 </span><strong>98</strong><span> 平米</span>
+                  </div>
+                </div>
+                <div class="house-information__detail">
+                  <div class="field-house-information-detail">
+                    <ul class="house-information__detail__list">
+                      <li>
+                        <i class="icons icons--structure"></i>
+                        <span>住宅</span>
+                      </li>
+                      <li>
+                        <i class="icons icons--floor"></i>
+                        <span>共 6 层</span>
+                      </li>
+                      <li>
+                        <i class="icons icons--direction"></i>
+                        <span
+                          class="mortgage-state"
+                          data-right="2d0e4b50-f62b-e711-8564-b499bab93608"
+                        ></span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="field-post-date">
+                    <div class="house-post-date">2019-04-16</div>
+                  </div>
+                </div>
+              </div>
+              <div class="house-information__price">
+                <div class="house-information__price__total">
+                  <strong>190</strong> ~ <strong>220</strong><span> 万元</span>
+                </div>
+                <div class="house-information__price__sqm">
+                  平均 2.2 万元/平方米
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="ranking">
+      <div id="cnnbfdc-ranking-list" style="overflow:hidden;margin-top:30px;">
+        <div
+          data-reactroot=""
+          class="cnnbfdc-ranking-list layout-center clearfix"
+        >
+          <div style="max-width: 560px; float: left; width: 540px;">
+            <h2 style="font-size: 24px; font-weight: normal; color: white;">
+              当前有效挂牌排名
+            </h2>
+            <div class="public-data">
+              <div
+                class="rc-table _17NVO_NThL14RQvFDG_Ijh rc-table-fixed-header rc-table-scroll-position-left"
+              >
+                <div class="rc-table-content">
+                  <div class="rc-table-scroll">
+                    <div
+                      class="rc-table-header"
+                      style="margin-bottom: -17px; padding-bottom: 0px;"
+                    >
+                      <table>
+                        <colgroup>
+                          <col style="width: 15%; min-width:15%;" />
+                          <col style="width: 65%; min-width:65%;" />
+                          <col style="width: 20%; min-width:20%;" />
+                        </colgroup>
+                        <thead class="rc-table-thead">
+                          <tr>
+                            <th style="text-align:center">名次</th>
+                            <th>总公司名称</th>
+                            <th>挂牌套数</th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                    <div class="rc-table-body">
+                      <table>
+                        <colgroup>
+                          <col style="width: 15%; min-width:15%;" />
+                          <col style="width: 65%; min-width:65%;" />
+                          <col style="width: 20%; min-width:20%;" />
+                        </colgroup>
+                        <tbody class="rc-table-tbody">
+                          <tr class="rc-table-row  rc-table-row-level-0">
+                            <td style="text-align:center">
+                              1
+                            </td>
+                            <td>
+                              <span
+                                class="rc-table-row-indent indent-level-0"
+                                style="padding-left: 0px;"
+                              ></span>
+                              <a
+                                style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100px;"
+                              >
+                                六安市南天房地产经纪有限公司
+                              </a>
+                            </td>
+                            <td>19127 套</td>
+                          </tr>
+                          <tr class="rc-table-row  rc-table-row-level-0">
+                            <td style="text-align:center">
+                              2
+                            </td>
+                            <td>
+                              <span
+                                class="rc-table-row-indent indent-level-0"
+                                style="padding-left: 0px;"
+                              ></span>
+                              <a
+                                style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100px;"
+                              >
+                                六安市甬旺房产经纪有限公司
+                              </a>
+                            </td>
+                            <td>12452 套</td>
+                          </tr>
+                          <tr class="rc-table-row  rc-table-row-level-0">
+                            <td style="text-align:center">
+                              3
+                            </td>
+                            <td>
+                              <span
+                                class="rc-table-row-indent indent-level-0"
+                                style="padding-left: 0px;"
+                              ></span>
+                              <a
+                                style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100px;"
+                              >
+                                六安市立得房地产股份有限公司
+                              </a>
+                            </td>
+                            <td>7725 套</td>
+                          </tr>
+                          <tr class="rc-table-row  rc-table-row-level-0">
+                            <td style="text-align:center">
+                              4
+                            </td>
+                            <td>
+                              <span
+                                class="rc-table-row-indent indent-level-0"
+                                style="padding-left: 0px;"
+                              ></span>
+                              <a
+                                style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100px;"
+                              >
+                                六安市天天红利房地产信息咨询有限公司
+                              </a>
+                            </td>
+                            <td>4604 套</td>
+                          </tr>
+                          <tr class="rc-table-row  rc-table-row-level-0">
+                            <td style="text-align:center">
+                              5
+                            </td>
+                            <td>
+                              <span
+                                class="rc-table-row-indent indent-level-0"
+                                style="padding-left: 0px;"
+                              ></span>
+                              <a
+                                style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100px;"
+                              >
+                                六安诚发房地产信息有限公司
+                              </a>
+                            </td>
+                            <td>4504 套</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="max-width: 590px; float: right; width: 590px;">
+            <h2 style="font-size: 24px; font-weight: normal; color: white;">
+              累计有效网签排名
+            </h2>
+            <div class="public-data">
+              <div
+                class="rc-table _17NVO_NThL14RQvFDG_Ijh rc-table-fixed-header rc-table-scroll-position-left"
+              >
+                <div class="rc-table-content">
+                  <div class="rc-table-scroll">
+                    <div
+                      class="rc-table-header"
+                      style="margin-bottom: -17px; padding-bottom: 0px;"
+                    >
+                      <table>
+                        <colgroup>
+                          <col style="width: 15%; min-width:15%;" />
+                          <col style="width: 65%; min-width:65%;" />
+                          <col style="width: 20%; min-width:20%;" />
+                        </colgroup>
+                        <thead class="rc-table-thead">
+                          <tr>
+                            <th style="text-align:center">名次</th>
+                            <th>总公司名称</th>
+                            <th>网签套数</th>
+                          </tr>
+                        </thead>
+                      </table>
+                    </div>
+                    <div class="rc-table-body">
+                      <table>
+                        <colgroup>
+                          <col style="width: 15%; min-width:15%;" />
+                          <col style="width: 65%; min-width:65%;" />
+                          <col style="width: 20%; min-width:20%;" />
+                        </colgroup>
+                        <tbody class="rc-table-tbody">
+                          <tr class="rc-table-row  rc-table-row-level-0">
+                            <td style="text-align:center">
+                              1
+                            </td>
+                            <td>
+                              <span
+                                class="rc-table-row-indent indent-level-0"
+                                style="padding-left: 0px;"
+                              ></span>
+                              <a
+                                style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100px;"
+                              >
+                                六安市南天房地产经纪有限公司
+                              </a>
+                            </td>
+                            <td>4645 套</td>
+                          </tr>
+                          <tr class="rc-table-row  rc-table-row-level-0">
+                            <td style="text-align:center">
+                              2
+                            </td>
+                            <td>
+                              <span
+                                class="rc-table-row-indent indent-level-0"
+                                style="padding-left: 0px;"
+                              ></span>
+                              <a
+                                style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100px;"
+                              >
+                                六安市立得房地产股份有限公司
+                              </a>
+                            </td>
+                            <td>2117 套</td>
+                          </tr>
+                          <tr class="rc-table-row  rc-table-row-level-0">
+                            <td style="text-align:center">
+                              3
+                            </td>
+                            <td>
+                              <span
+                                class="rc-table-row-indent indent-level-0"
+                                style="padding-left: 0px;"
+                              ></span>
+                              <a
+                                style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100px;"
+                              >
+                                六安市天天红利房地产信息咨询有限公司
+                              </a>
+                            </td>
+                            <td>1973 套</td>
+                          </tr>
+                          <tr class="rc-table-row  rc-table-row-level-0">
+                            <td style="text-align:center">
+                              4
+                            </td>
+                            <td>
+                              <span
+                                class="rc-table-row-indent indent-level-0"
+                                style="padding-left: 0px;"
+                              ></span>
+                              <a
+                                style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100px;"
+                              >
+                                六安华岳房产经纪有限公司
+                              </a>
+                            </td>
+                            <td>1833 套</td>
+                          </tr>
+                          <tr class="rc-table-row  rc-table-row-level-0">
+                            <td style="text-align:center">
+                              5
+                            </td>
+                            <td>
+                              <span
+                                class="rc-table-row-indent indent-level-0"
+                                style="padding-left: 0px;"
+                              ></span>
+                              <a
+                                style="overflow: hidden;text-overflow: ellipsis;white-space: nowrap;width: 100px;"
+                              >
+                                六安市甬旺房产经纪有限公司
+                              </a>
+                            </td>
+                            <td>1214 套</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-center clearfix" style="margin-bottom:20px;">
+      <div class="home-box develop-publicity">
+        <div class="home-box__title">
+          <div class="home-box__title__left index_title">
+            <div class="index_title_left">
+              <h4>成交记录</h4>
+            </div>
+            <div class="index_title_right">
+              <a href="/Contract">更多&gt;&gt;</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="home-box__center develop-publicity__content"
+          style="overflow: hidden; height: 330px;"
+        >
+          <ul>
+            <li>
+              <dl>
+                <dt>大碶街道(中河茗苑)</dt>
+                <dd>
+                  <span style="float: left;">2019330206MM0026290B</span
+                  ><span style="float: right;">2019/5/12</span>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>大碶街道(中河茗苑)</dt>
+                <dd>
+                  <span style="float: left;">2019330206MM0026289A</span
+                  ><span style="float: right;">2019/5/12</span>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>新碶街道(光明领御)</dt>
+                <dd>
+                  <span style="float: left;">2019330206MM0026288A</span
+                  ><span style="float: right;">2019/5/12</span>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>新碶街道(黄金海岸)</dt>
+                <dd>
+                  <span style="float: left;">2019330206MM0026286A</span
+                  ><span style="float: right;">2019/5/12</span>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>新碶街道(岷山路999号)</dt>
+                <dd>
+                  <span style="float: left;">2019330206MM0026284A</span
+                  ><span style="float: right;">2019/5/12</span>
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="home-box refund-publicity">
+        <div class="home-box__title">
+          <div class="home-box__title__left index_title">
+            <div class="index_title_left">
+              <h4>累计合同备案撤销量</h4>
+            </div>
+            <div class="index_title_right">
+              <a href="/Contract/Cancel">更多&gt;&gt;</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="home-box__center refund-publicity__content"
+          style="overflow: hidden; height: 330px;"
+        >
+          <ul>
+            <li>
+              <dl>
+                <dt>六安市南天房地产经纪有限公司</dt>
+                <dd><span>累计合同撤销数：408</span></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>六安市甬旺房产经纪有限公司</dt>
+                <dd><span>累计合同撤销数：242</span></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>六安市天天红利房地产信息咨询有限公司</dt>
+                <dd><span>累计合同撤销数：172</span></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>六安诚发房地产信息有限公司</dt>
+                <dd><span>累计合同撤销数：134</span></dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>六安市立得房地产股份有限公司</dt>
+                <dd><span>累计合同撤销数：93</span></dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="home-box license-publicity">
+        <div class="home-box__title">
+          <div class="home-box__title__left index_title">
+            <div class="index_title_left">
+              <h4>非独家委托转自行成交量</h4>
+            </div>
+            <div class="index_title_right">
+              <a href="/Contract/NonExclusiveEntrustment">更多&gt;&gt;</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="home-box__center license-publicity__content"
+          style="overflow: hidden; height: 330px;"
+        >
+          <ul>
+            <li>
+              <dl>
+                <dt>六安市南天房地产经纪有限公司</dt>
+                <dd>
+                  <span style="float: left;">累计转自行成交数：6095</span>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>六安市甬旺房产经纪有限公司</dt>
+                <dd>
+                  <span style="float: left;">累计转自行成交数：5440</span>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>六安市立得房地产股份有限公司</dt>
+                <dd>
+                  <span style="float: left;">累计转自行成交数：2586</span>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>六安市天天红利房地产信息咨询有限公司</dt>
+                <dd>
+                  <span style="float: left;">累计转自行成交数：2017</span>
+                </dd>
+              </dl>
+            </li>
+            <li>
+              <dl>
+                <dt>六安诚发房地产信息有限公司</dt>
+                <dd>
+                  <span style="float: left;">累计转自行成交数：1875</span>
+                </dd>
+              </dl>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="region region-bottom">
+      <div class="block block-block first last odd" id="block-block-2">
+        <div class="bottom-navigation layout-center jquery-once-1-processed">
+          <ul class="bottom-navigation__list clearfix">
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about/website">平台介绍</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about">关于我们</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about/contactus">联系我们</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about/privacy">隐私声明</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about/map">网站地图</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//www.cnnbfdc.com/page/notice/clf.html" target="__blank"
+                >业务平台登录</a
+              >
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//www.cnnbfdc.com/home/newshome">房产新闻</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//www.cnnbfdc.com/download">下载中心</a>
+            </li>
+          </ul>
+          <div class="bottom-navigation__tabs">
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item active">
+                <a href="#">国家部委厅网站</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="#">六安市政府部门网站</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="#">六安市经纪机构网站</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="#">六安市房地产开发商网站</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="#">六安市房地产信息服务网站</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-navigation__tab-content">
+            <ul class="bottom-navigation__list active clearfix">
+              <li class="bottom-navigation__item">
+                <a href="http://www.gov.cn/" target="_blank"
+                  >中央政府门户网站</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.chinatax.gov.cn/" target="_blank"
+                  >国家税务总局</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.realestate.cei.gov.cn/" target="_blank"
+                  >中国房地产信息网</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.wyzg.org/" target="_blank"
+                  >中国房地产行业协</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.mohurd.gov.cn/" target="_blank">住建部</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.pbc.gov.cn/" target="_blank">人民银行</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.sdpc.gov.cn/" target="_blank"
+                  >中国发改委员会</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.zjjs.com.cn/" target="_blank"
+                  >浙江省建设厅</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.mlr.gov.cn/" target="_blank">国土资源部</a>
+              </li>
+            </ul>
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item">
+                <a href="http://www.ningbo.gov.cn/" target="_blank"
+                  >六安政府网
+                </a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbdpc.gov.cn/" target="_blank"
+                  >中国房地产行业协</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nblr.gov.cn/" target="_blank"
+                  >市国土资源局</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbplan.gov.cn/" target="_blank"
+                  >六安市规划局</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://nb.wenming.cn/" target="_blank">六安文明网</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbcs.gov.cn/" target="_blank">市财税局</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbjs.gov.cn/" target="_blank"
+                  >六安市住房和城乡建设委员会</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbgjj.com/" target="_blank"
+                  >六安市住房公积金管理中心</a
+                >
+              </li>
+            </ul>
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item"><a href="##">暂无 </a></li>
+            </ul>
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item"><a href="##"> 暂无 </a></li>
+            </ul>
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item">
+                <a href="http://www.xinhuanet.com/house/" target="_blank">
+                  新华网房产
+                </a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nb-fx.cn/" target="_blank"
+                  >六安市房地产业协会</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://nb.house.sina.com.cn/" target="_blank"
+                  >新浪乐居</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://house.cnool.net/" target="_blank"
+                  >东方热线房产网</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://house.focus.cn/" target="_blank"
+                  >搜狐焦点房产
+                </a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://nb.soufun.com/" target="_blank">搜房网六安</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.ihoome.com/" target="_blank">爱家网</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://nb.house.qq.com/" target="_blank">腾讯房产</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.china-crb.cn/" target="_blank"
+                  >中国房地产网</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="layout-center">
+            Copyright@2001-2017 CNNBFDC.COM All Rights Reserved
+            浙ICP备05082368号
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $(function() {
+        $(".license-publicity__content").scrollForever({
+          continuous: false,
+          dir: "top",
+          delayTime: 3000
+        });
+        $(".develop-publicity__content").scrollForever({
+          continuous: false,
+          dir: "top",
+          delayTime: 3000
+        });
+        $(".refund-publicity__content").scrollForever({
+          continuous: false,
+          dir: "top",
+          delayTime: 3000
+        });
+      });
+    </script>
+    <script
+      type="text/javascript"
+      src="../shared/js/scrollForever.min.js"
+      charset="utf-8"
+    ></script>
+    <script>
+      !(function() {
+        var view = $("#sale_listing_view");
+        var mortgageStateWrapps = view.find("span.mortgage-state");
+        var enterpriseLogoImgs = view.find("img.enterprise-logo-quare");
+        var rightsGUID = [],
+          agenciesGUID = [];
+
+        // 获取抵押状态
+        if (mortgageStateWrapps.length) {
+          mortgageStateWrapps.each(function() {
+            rightsGUID.push($(this).data("right"));
+          });
+          $.ajax({
+            url: "/webapi/esf/getmortgagestatesbypropertyright",
+            type: "get",
+            contentType: "application/json",
+            dataType: "json",
+            data: { propertyRightsGUIDs: rightsGUID.join(",") },
+            success: function(res) {
+              if (!res) return;
+
+              mortgageStateWrapps.each(function() {
+                var self = $(this);
+                guid = self.data("right");
+                if (res[guid] !== undefined) {
+                  self.text(res[guid] ? "已抵押" : "未抵押");
+                }
+              });
+            }
+          });
+        }
+
+        // 获取机构logo
+        if (enterpriseLogoImgs.length) {
+          enterpriseLogoImgs.each(function() {
+            agenciesGUID.push($(this).data("guid"));
+          });
+          $.ajax({
+            url: "/webapi/esf/getagencieslogosquare",
+            type: "get",
+            contentType: "application/json",
+            dataType: "json",
+            data: { agenciesGUIDs: agenciesGUID.join(",") },
+            success: function(res) {
+              if (!res) return;
+
+              enterpriseLogoImgs.each(function() {
+                var self = $(this);
+                guid = self.data("guid");
+                if (res[guid]) {
+                  self.attr("src", res[guid]);
+                } else {
+                  self.remove();
+                }
+              });
+            }
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>
+
+<script>
+  function closeWarning() {
+    $("#compatibility-warning").hide();
+  }
+
+  $(".bottom-navigation__tabs a").click(function(event) {
+    event.stopPropagation();
+    event.preventDefault();
+
+    var i = $(".bottom-navigation__tabs .bottom-navigation__item").index(
+      $(this).parent()
+    );
+
+    $(this)
+      .parent()
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
+
+    $(".bottom-navigation__tab-content .bottom-navigation__list")
+      .removeClass("active")
+      .eq(i)
+      .addClass("active");
+  });
+</script>
