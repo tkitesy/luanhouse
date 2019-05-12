@@ -1,0 +1,2 @@
+# luanhouse
+static files
