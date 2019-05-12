@@ -55,6 +55,7 @@
     </style>
 
     <script src="../shared/js/jquery-1.12.4.min.js"></script>
+    <script src="../shared/js/tools.js"></script>
     <!--[if lte IE 9]>
       <link rel="stylesheet" href="/src/css/ie8.css" />
       <script src="/src/js/PIE_IE678.js"></script>
@@ -130,15 +131,15 @@
             <img src="../shared/imgs/logo.png" />
           </div>
           <ul class="cnnbfdc-header__top__center">
-            <li><a href="//www.cnnbfdc.com">首页</a></li>
-            <li><a href="//newhouse.cnnbfdc.com">商品房</a></li>
-            <li><a href="//esf.cnnbfdc.com">二手房</a></li>
-            <li><a href="//esf.cnnbfdc.com/building">住房租赁</a></li>
-            <li class="active"><a href="//cx.cnnbfdc.com">信用评价</a></li>
+            <li><a href="../home/index.html">首页</a></li>
+            <li><a href="../building/index.html">商品房</a></li>
+            <li><a href="../esf/index.html">二手房</a></li>
+            <li><a href="../building/index.html">住房租赁</a></li>
+            <li class="active"><a href="../cx/index.html">信用评价</a></li>
           </ul>
           <ul class="cnnbfdc-header__top__right">
             <li>
-              <a href="//www.cnnbfdc.com/querytools"
+              <a href="../querytools/index.html"
                 ><i class="icon-compass"></i>办事大厅</a
               >
             </li>
@@ -1456,5 +1457,7 @@
       .removeClass("active")
       .eq(i)
       .addClass("active");
+
+      acitveHeaderItem("cx");
   });
 </script>
