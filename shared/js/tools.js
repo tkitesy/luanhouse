@@ -14,3 +14,13 @@ function acitveHeaderItem(pageName) {
       });
     });
   }
+
+
+  function renderPagenation(container, options){
+    var total = options.total;
+    var pageSize = options.pageSize || 20;
+    var onChange = options.onChange || function(){};
+    var current = options.current || 1;
+    var pageNum = Math.ceil(total / pageSize);
+
+  }

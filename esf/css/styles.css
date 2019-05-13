@@ -7601,7 +7601,7 @@ html.lt-ie9 .house-vinfo__size {
     display: inline-block;
     margin-left: 1rem;
     vertical-align: top;
-    background-image: url(../sass/components/house-vinfo/qr.png);
+    background-image: url(../imgs/qr.png);
     width: 24px;
     height: 24px;
     background-size: 100%;
@@ -7706,7 +7706,7 @@ html.lt-ie9 .house-vinfo__size {
   width: 60px;
   height: 60px;
   margin-right: 1.5rem;
-  background-image: url(../sass/components/house-vinfo/warning.png);
+  background-image: url(../imgs/warning.png);
 }
 
 .house-vinfo-shelve__shelve-text {
@@ -13218,7 +13218,7 @@ html.lt-ie9 .breadcrumb__list {
   display: inline-block;
   height: 1rem;
   width: 1rem;
-  background: url(../sass/navigation/topbar/home.png) no-repeat center/100% transparent;
+  background: url(../imgs/home.png) no-repeat center/100% transparent;
   vertical-align: middle;
 }
 
@@ -13695,15 +13695,15 @@ html.lt-ie9 .topbar .topbar__left .topbar__item {
 }
 
 .topbar__icon--home {
-  background-image: url(../sass/navigation/topbar/homeie.png);
+  background-image: url(../imgs/homeie.png);
 }
 
 .topbar__icon--phone {
-  background-image: url(../sass/navigation/topbar/phoneie.png);
+  background-image: url(../imgs/phoneie.png);
 }
 
 .topbar__icon--user {
-  background-image: url(../sass/navigation/topbar/userie.png);
+  background-image: url(../imgs/userie.png);
 }
 
 .topbar a {
