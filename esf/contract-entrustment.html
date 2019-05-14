@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      六安真实房源、六安中介诚信、六安房源核验 | 六安市房产交易信息服务网|存量房
+    </title>
+    <link
+      rel="favicon icon "
+      type="images/x-icon"
+      href="../shared/imgs/favicon.ico"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <link href="css/PagedList.css" rel="stylesheet" />
+    <link href="css/style-blue.css" rel="stylesheet" />
+    <link href="../shared/css/layui.css" rel="stylesheet" type="text/css" />
+    <link href="css/layui-modify.css" rel="stylesheet" type="text/css" />
+    <style>
+      .filter-list li a.selected {
+        display: inline !important;
+        margin: 0 !important;
+      }
+
+      .filter-lists {
+        margin-bottom: 20px;
+      }
+
+      .filter-lists__title {
+        width: 120px !important;
+        padding: 2rem 0.4rem !important;
+      }
+
+      .filter-lists .filter-list {
+        width: 87% !important;
+      }
+
+      .filter-lists .filter-list li {
+        margin: 3px 0;
+      }
+
+      .agency-logo {
+        margin: 20px 0 !important;
+      }
+
+      .agency-information__agencies-logo {
+        height: 70px;
+        overflow: hidden;
+      }
+
+      .filter-lists__right {
+        float: right !important;
+        font-size: 14px !important;
+        margin: 0.6rem 0.2rem !important;
+      }
+
+      .filter-lists__right strong {
+        color: #e54044 !important;
+        font-size: 18px !important;
+        vertical-align: -1px !important;
+      }
+    </style>
+
+    <script
+      src="../shared/js/jquery-1.12.4.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script src="../shared/js/layout.js"></script>
+
+    <!--[if lte IE 9]>
+      <link rel="stylesheet" href="/src/css/ie8.css" />
+      <script src="/src/js/PIE_IE678.js"></script>
+      <script src="/src/js/html5shiv.min.js"></script>
+      <script src="/src/js/rem.min.js"></script>
+      <script src="/src/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="page-home">
+    <!--[if lte IE 9]>
+      <DIV class="compatibility-warning" id="compatibility-warning"
+        ><DIV class="compatibility-warning__content">
+          <H3 class="compatibility-warning__title"
+            >您的浏览器版本太低啦，会严重影响浏览体验</H3
+          >
+          <P>如果您正在使用多核浏览器（如360、QQ浏览器）请切换到极速模式</P>
+          <DIV class="compatibility-warning__browser">
+            <P class="compatibility-warning__browser__title">推荐浏览器</P>
+            <UL class="compatibility-warning__browser__recommend">
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--ie"
+                ></I
+                ><A
+                  href="https://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads"
+                  >IE10以上</A
+                >
+              </LI>
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--edge"
+                ></I
+                ><A href="https://www.microsoft.com/en/windows/microsoft-edge"
+                  >微软edge</A
+                >
+              </LI>
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--firefox"
+                ></I
+                ><A href="https://www.firefox.com/">Firefox</A>
+              </LI>
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--chrome"
+                ></I
+                ><A
+                  href="https://www.google.com/chrome/browser/desktop/index.html?"
+                  >Chrome</A
+                >
+              </LI>
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--safari"
+                ></I
+                ><A href="https://www.apple.com/safari">Safari</A>
+              </LI></UL
+            ><A
+              class="compatibility-warning__browser__continue"
+              onclick="closeWarning()"
+              >继续在当前浏览器访问</A
+            >
+          </DIV></DIV
+        ></DIV
+      >
+    <![endif]-->
+
+    <div class="cnnbfdc-header">
+      <div class="cnnbfdc-header__top">
+        <div class="layout-center">
+          <div class="cnnbfdc-header__top__left">
+            <img src="../shared/imgs/logo.png" />
+          </div>
+          <ul class="cnnbfdc-header__top__center">
+            <li><a href="../home/index.html">首页</a></li>
+            <li><a href="../building/index.html">商品房</a></li>
+            <li><a href="../esf/index.html">二手房</a></li>
+            <li><a href="../building/index.html">住房租赁</a></li>
+            <li class="active"><a href="../cx/index.html">信用评价</a></li>
+          </ul>
+          <ul class="cnnbfdc-header__top__right">
+            <li>
+              <a href="../querytools/index.html"
+                ><i class="icon-compass"></i>办事大厅</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cnnbfdc-header__center">
+        <div class="layout-center">
+            <ul name="ul_esf" class="cnnbfdc-header__center__top">
+                <li name="index"><a href="index.html">二手房首页</a></li>
+                <li name="house-list"><a href="house-list.html">房源</a></li>
+                <li name="contract"><a href="contract.html">信息公示</a></li>
+                <li name="contract-verification">
+                  <a href="contract-verification.html">房源验真</a>
+                </li>
+                <li name="contract-query" class="active">
+                  <a href="contract-query.html">合同查询</a>
+                </li>
+              </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="container publicity" name="pubmenu">
+      <div class="tabs">
+        <ul>
+          <a href="/Contract">
+            <li>
+              成交记录
+            </li>
+          </a>
+          <a href="/Contract/cancel">
+            <li>
+              累计合同备案撤销量
+            </li>
+          </a>
+          <a href="/Contract/NonExclusiveEntrustment">
+            <li class="active">
+              非独家委托转自行成交量
+            </li>
+          </a>
+        </ul>
+      </div>
+      <div class="publicity-content">
+        <form
+          class="layui-form"
+          action="/Contract/NonExclusiveEntrustment"
+          method="get"
+        >
+          <div class="layui-form-item">
+            <div class="layui-input-inline" style="width: 250px;">
+              <input
+                type="text"
+                name="kw"
+                lay-verify="title"
+                autocomplete="off"
+                placeholder="输入总公司/推广名查询"
+                class="layui-input"
+              />
+            </div>
+            <div
+              class="layui-input-inline"
+              style="width: auto;margin-right: 0;"
+            >
+              <button
+                class="layui-btn layui-btn-primary"
+                style="color: white;background-color: #3281CD;padding: 0px 40px;border-radius:5px;"
+              >
+                搜索
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="view-filters" style="margin-top:20px;">
+          <style>
+            .filter-list li a.selected {
+              display: inline !important;
+              margin: 0 !important;
+            }
+          </style>
+          <div class="filter-lists">
+            <div class="filter-lists__title" style="padding: 1.6rem .4rem;">
+              <figure class="icons icons--map"></figure>
+              <span>区域</span>
+            </div>
+            <ul class="filter-list">
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment"
+                  rel="nofollow"
+                  class="facetapi-inactive  selected "
+                  >不限
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=544ae4ee-c0b1-4d1f-8f1f-54e39e0f5f9a"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >海曙区
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=ebea6d97-b247-4902-993b-9d1ac819ecae"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >江北区
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=a34cac6c-5e49-4976-9866-e5c7325194c6"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >鄞州区
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=b2f96919-90c3-4882-b939-6ffb648a2beb"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >镇海区
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=141d5e92-5f00-43a2-b040-011970d9a7e2"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >北仑区
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=751e10e8-1f75-4bf3-aef5-17a8a43d638b"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >高新区
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=b528551c-4b88-431a-8047-9285cc9d30d9"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >东钱湖
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=60f0232f-04d2-4eec-a133-a2abffcf0fda"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >梅山
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=7f572830-24c3-4078-bcc8-40adf8d7b6fa"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >保税区
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=943c10d8-a054-474c-ab0d-e4581dcd25f3"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >大榭
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=c8fd3c63-55e5-4a67-8cf8-9cedadd0f1a2"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >奉化区
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=efd80151-73a6-46d8-a683-9fadc4313cf4"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >余姚市
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=ef3f132d-d9fa-4c12-9772-3844f5e871a5"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >慈溪市
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=82508aac-46d6-4c29-a477-03e18040f3ed"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >宁海县
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=88c9fcce-72a7-4ccf-8565-5406111509b3"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >象山县
+                </a>
+              </li>
+              <li class="leaf">
+                <a
+                  href="/Contract/NonExclusiveEntrustment?d=601a0256-8fad-4464-8c54-1deebe2f3357"
+                  rel="nofollow"
+                  class="facetapi-inactive "
+                  >杭州湾
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <table class="layui-table" lay-size="lg">
+          <colgroup>
+            <col width="100" />
+            <col width="350" />
+            <col width="100" />
+            <col width="200" />
+          </colgroup>
+          <thead>
+            <tr>
+              <td>所在区</td>
+              <td>总公司名称</td>
+              <td>累计数量</td>
+              <td>查看门店明细</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr
+              name="view-row"
+              data-enterpriseguid="122dc8f0-0563-495e-b6db-20f6b2c04ab4"
+            >
+              <td>海曙区</td>
+              <td><a name="agencyName">六安市南天房地产经纪有限公司</a></td>
+              <td>6315</td>
+              <td>
+                <a
+                  style="color: #3281CD;"
+                  href="/Contract/NonExclusiveEntrustmentStore?EnterpriseGUID=122dc8f0-0563-495e-b6db-20f6b2c04ab4&amp;EnterpriseName=%E5%AE%81%E6%B3%A2%E5%B8%82%E5%8D%97%E5%A4%A9%E6%88%BF%E5%9C%B0%E4%BA%A7%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+                  >查看门店明细</a
+                >
+              </td>
+            </tr>
+            <tr
+              name="view-row"
+              data-enterpriseguid="bd12da7b-cce7-4ab3-946e-a6b86c1608a9"
+            >
+              <td>海曙区</td>
+              <td><a name="agencyName">六安市甬旺房产经纪有限公司</a></td>
+              <td>5643</td>
+              <td>
+                <a
+                  style="color: #3281CD;"
+                  href="/Contract/NonExclusiveEntrustmentStore?EnterpriseGUID=bd12da7b-cce7-4ab3-946e-a6b86c1608a9&amp;EnterpriseName=%E5%AE%81%E6%B3%A2%E5%B8%82%E7%94%AC%E6%97%BA%E6%88%BF%E4%BA%A7%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+                  >查看门店明细</a
+                >
+              </td>
+            </tr>
+            <tr
+              name="view-row"
+              data-enterpriseguid="f9105491-9fdd-4623-b350-183c45552136"
+            >
+              <td>鄞州区</td>
+              <td><a name="agencyName">六安市立得房地产股份有限公司</a></td>
+              <td>2700</td>
+              <td>
+                <a
+                  style="color: #3281CD;"
+                  href="/Contract/NonExclusiveEntrustmentStore?EnterpriseGUID=f9105491-9fdd-4623-b350-183c45552136&amp;EnterpriseName=%E5%AE%81%E6%B3%A2%E5%B8%82%E7%AB%8B%E5%BE%97%E6%88%BF%E5%9C%B0%E4%BA%A7%E8%82%A1%E4%BB%BD%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+                  >查看门店明细</a
+                >
+              </td>
+            </tr>
+            <tr
+              name="view-row"
+              data-enterpriseguid="ef65c783-86d1-412f-9f62-040c8d48819f"
+            >
+              <td>海曙区</td>
+              <td>
+                <a name="agencyName">六安市天天红利房地产信息咨询有限公司</a>
+              </td>
+              <td>2073</td>
+              <td>
+                <a
+                  style="color: #3281CD;"
+                  href="/Contract/NonExclusiveEntrustmentStore?EnterpriseGUID=ef65c783-86d1-412f-9f62-040c8d48819f&amp;EnterpriseName=%E5%AE%81%E6%B3%A2%E5%B8%82%E5%A4%A9%E5%A4%A9%E7%BA%A2%E5%88%A9%E6%88%BF%E5%9C%B0%E4%BA%A7%E4%BF%A1%E6%81%AF%E5%92%A8%E8%AF%A2%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+                  >查看门店明细</a
+                >
+              </td>
+            </tr>
+            <tr
+              name="view-row"
+              data-enterpriseguid="2f3ec08c-39da-480c-8dea-6de5f4a465f3"
+            >
+              <td>海曙区</td>
+              <td><a name="agencyName">六安诚发房地产信息有限公司</a></td>
+              <td>1947</td>
+              <td>
+                <a
+                  style="color: #3281CD;"
+                  href="/Contract/NonExclusiveEntrustmentStore?EnterpriseGUID=2f3ec08c-39da-480c-8dea-6de5f4a465f3&amp;EnterpriseName=%E5%AE%81%E6%B3%A2%E8%AF%9A%E5%8F%91%E6%88%BF%E5%9C%B0%E4%BA%A7%E4%BF%A1%E6%81%AF%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+                  >查看门店明细</a
+                >
+              </td>
+            </tr>
+            <tr
+              name="view-row"
+              data-enterpriseguid="83f45a54-fa69-41bb-a0ce-45692431f903"
+            >
+              <td>鄞州区</td>
+              <td><a name="agencyName">六安荣庭房产经纪有限公司</a></td>
+              <td>1345</td>
+              <td>
+                <a
+                  style="color: #3281CD;"
+                  href="/Contract/NonExclusiveEntrustmentStore?EnterpriseGUID=83f45a54-fa69-41bb-a0ce-45692431f903&amp;EnterpriseName=%E5%AE%81%E6%B3%A2%E8%8D%A3%E5%BA%AD%E6%88%BF%E4%BA%A7%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+                  >查看门店明细</a
+                >
+              </td>
+            </tr>
+            <tr
+              name="view-row"
+              data-enterpriseguid="56f29333-bc0f-4405-81fd-ca13a1b82f5a"
+            >
+              <td>江北区</td>
+              <td><a name="agencyName">六安市江源房地产经纪有限公司</a></td>
+              <td>1102</td>
+              <td>
+                <a
+                  style="color: #3281CD;"
+                  href="/Contract/NonExclusiveEntrustmentStore?EnterpriseGUID=56f29333-bc0f-4405-81fd-ca13a1b82f5a&amp;EnterpriseName=%E5%AE%81%E6%B3%A2%E5%B8%82%E6%B1%9F%E6%BA%90%E6%88%BF%E5%9C%B0%E4%BA%A7%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+                  >查看门店明细</a
+                >
+              </td>
+            </tr>
+            <tr
+              name="view-row"
+              data-enterpriseguid="5c3f521a-f872-4f11-90f3-b901501909cc"
+            >
+              <td>鄞州区</td>
+              <td><a name="agencyName">六安爱居攸家房产经纪有限公司</a></td>
+              <td>933</td>
+              <td>
+                <a
+                  style="color: #3281CD;"
+                  href="/Contract/NonExclusiveEntrustmentStore?EnterpriseGUID=5c3f521a-f872-4f11-90f3-b901501909cc&amp;EnterpriseName=%E5%AE%81%E6%B3%A2%E7%88%B1%E5%B1%85%E6%94%B8%E5%AE%B6%E6%88%BF%E4%BA%A7%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+                  >查看门店明细</a
+                >
+              </td>
+            </tr>
+            <tr
+              name="view-row"
+              data-enterpriseguid="6d2f05a4-1d04-4bce-a066-e48ea264d766"
+            >
+              <td>鄞州区</td>
+              <td><a name="agencyName">六安易居甬动房地产经纪有限公司</a></td>
+              <td>688</td>
+              <td>
+                <a
+                  style="color: #3281CD;"
+                  href="/Contract/NonExclusiveEntrustmentStore?EnterpriseGUID=6d2f05a4-1d04-4bce-a066-e48ea264d766&amp;EnterpriseName=%E5%AE%81%E6%B3%A2%E6%98%93%E5%B1%85%E7%94%AC%E5%8A%A8%E6%88%BF%E5%9C%B0%E4%BA%A7%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+                  >查看门店明细</a
+                >
+              </td>
+            </tr>
+            <tr
+              name="view-row"
+              data-enterpriseguid="87fe340a-072c-4db3-af03-f8afdd14c6fb"
+            >
+              <td>海曙区</td>
+              <td><a name="agencyName">六安市家缘房产经纪有限公司</a></td>
+              <td>594</td>
+              <td>
+                <a
+                  style="color: #3281CD;"
+                  href="/Contract/NonExclusiveEntrustmentStore?EnterpriseGUID=87fe340a-072c-4db3-af03-f8afdd14c6fb&amp;EnterpriseName=%E5%AE%81%E6%B3%A2%E5%B8%82%E5%AE%B6%E7%BC%98%E6%88%BF%E4%BA%A7%E7%BB%8F%E7%BA%AA%E6%9C%89%E9%99%90%E5%85%AC%E5%8F%B8"
+                  >查看门店明细</a
+                >
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="text-align:center;">
+          <div class="pagination-container">
+            <ul class="pagination">
+              <li class="active"><a>1</a></li>
+              <li><a href="/Contract/NonExclusiveEntrustment?page=2">2</a></li>
+              <li><a href="/Contract/NonExclusiveEntrustment?page=3">3</a></li>
+              <li><a href="/Contract/NonExclusiveEntrustment?page=4">4</a></li>
+              <li><a href="/Contract/NonExclusiveEntrustment?page=5">5</a></li>
+              <li><a href="/Contract/NonExclusiveEntrustment?page=6">6</a></li>
+              <li><a href="/Contract/NonExclusiveEntrustment?page=7">7</a></li>
+              <li><a href="/Contract/NonExclusiveEntrustment?page=8">8</a></li>
+              <li class="disabled PagedList-ellipses"><a>&#8230;</a></li>
+              <li class="PagedList-skipToNext">
+                <a href="/Contract/NonExclusiveEntrustment?page=2" rel="next"
+                  >下一页</a
+                >
+              </li>
+              <li class="PagedList-skipToLast">
+                <a href="/Contract/NonExclusiveEntrustment?page=50">尾页</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="region region-bottom">
+      <div class="block block-block first last odd" id="block-block-2">
+        <div class="bottom-navigation layout-center jquery-once-1-processed">
+          <ul class="bottom-navigation__list clearfix">
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about/website">平台介绍</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about">关于我们</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about/contactus">联系我们</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about/privacy">隐私声明</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about/map">网站地图</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//www.cnnbfdc.com/page/notice/clf.html" target="__blank"
+                >业务平台登录</a
+              >
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//www.cnnbfdc.com/home/newshome">房产新闻</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//www.cnnbfdc.com/download">下载中心</a>
+            </li>
+          </ul>
+          <div class="bottom-navigation__tabs">
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item active">
+                <a href="#">国家部委厅网站</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="#">六安市政府部门网站</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="#">六安市经纪机构网站</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="#">六安市房地产开发商网站</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="#">六安市房地产信息服务网站</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-navigation__tab-content">
+            <ul class="bottom-navigation__list active clearfix">
+              <li class="bottom-navigation__item">
+                <a href="http://www.gov.cn/" target="_blank"
+                  >中央政府门户网站</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.chinatax.gov.cn/" target="_blank"
+                  >国家税务总局</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.realestate.cei.gov.cn/" target="_blank"
+                  >中国房地产信息网</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.wyzg.org/" target="_blank"
+                  >中国房地产行业协</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.mohurd.gov.cn/" target="_blank">住建部</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.pbc.gov.cn/" target="_blank">人民银行</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.sdpc.gov.cn/" target="_blank"
+                  >中国发改委员会</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.zjjs.com.cn/" target="_blank"
+                  >浙江省建设厅</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.mlr.gov.cn/" target="_blank">国土资源部</a>
+              </li>
+            </ul>
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item">
+                <a href="http://www.ningbo.gov.cn/" target="_blank"
+                  >六安政府网
+                </a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbdpc.gov.cn/" target="_blank"
+                  >中国房地产行业协</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nblr.gov.cn/" target="_blank"
+                  >市国土资源局</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbplan.gov.cn/" target="_blank"
+                  >六安市规划局</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://nb.wenming.cn/" target="_blank">六安文明网</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbcs.gov.cn/" target="_blank">市财税局</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbjs.gov.cn/" target="_blank"
+                  >六安市住房和城乡建设委员会</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbgjj.com/" target="_blank"
+                  >六安市住房公积金管理中心</a
+                >
+              </li>
+            </ul>
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item"><a href="##">暂无 </a></li>
+            </ul>
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item"><a href="##"> 暂无 </a></li>
+            </ul>
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item">
+                <a href="http://www.xinhuanet.com/house/" target="_blank">
+                  新华网房产
+                </a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nb-fx.cn/" target="_blank"
+                  >六安市房地产业协会</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://nb.house.sina.com.cn/" target="_blank"
+                  >新浪乐居</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://house.cnool.net/" target="_blank"
+                  >东方热线房产网</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://house.focus.cn/" target="_blank"
+                  >搜狐焦点房产
+                </a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://nb.soufun.com/" target="_blank">搜房网六安</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.ihoome.com/" target="_blank">爱家网</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://nb.house.qq.com/" target="_blank">腾讯房产</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.china-crb.cn/" target="_blank"
+                  >中国房地产网</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="layout-center">
+            Copyright@2001-2017 CNNBFDC.COM All Rights Reserved
+            浙ICP备05082368号
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  function closeWarning() {
+    $("#compatibility-warning").hide();
+  }
+
+  $(".bottom-navigation__tabs a").click(function(event) {
+    event.stopPropagation();
+    event.preventDefault();
+
+    var i = $(".bottom-navigation__tabs .bottom-navigation__item").index(
+      $(this).parent()
+    );
+
+    $(this)
+      .parent()
+      .addClass("active")
+      .siblings()
+      .removeClass("active");
+
+    $(".bottom-navigation__tab-content .bottom-navigation__list")
+      .removeClass("active")
+      .eq(i)
+      .addClass("active");
+  });
+</script>

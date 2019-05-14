@@ -4,7 +4,7 @@ $(function() {
       location.pathname
         .replace("/", "")
         .toLowerCase()
-        .indexOf($(this).attr("name")) >= 0
+        .endsWith($(this).attr("name") + '.html')
     ) {
       $(this).addClass("active");
     } else {

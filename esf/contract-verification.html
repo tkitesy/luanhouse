@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      六安真实房源、六安中介诚信、六安房源核验 |
+      六安市房产交易信息服务网|存量房|房源验真通道
+    </title>
+    <link
+      rel="favicon icon "
+      type="images/x-icon"
+      href="../shared/imgs/favicon.ico"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="../shared/css/antd.min.css" />
+    <link rel="stylesheet" href="css/contract-form.css" />
+
+    <style>
+      html {
+        font-size: 16px !important;
+      }
+
+      .vcode-warnning ul li {
+        font-size: 12px;
+      }
+
+      .ant-layout-sider {
+        background: #f3f3f3 !important;
+      }
+
+      a {
+        transition: none !important;
+      }
+    </style>
+
+    <script
+      src="../shared/js/jquery-1.12.4.min.js"
+      type="text/javascript"
+      charset="utf-8"
+    ></script>
+    <script src="../shared/js/layout.js"></script>
+
+    <!--[if lte IE 9]>
+      <link rel="stylesheet" href="/src/css/ie8.css" />
+      <script src="/src/js/PIE_IE678.js"></script>
+      <script src="/src/js/html5shiv.min.js"></script>
+      <script src="/src/js/rem.min.js"></script>
+      <script src="/src/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body class="page-home">
+    <!--[if lte IE 9]>
+      <DIV class="compatibility-warning" id="compatibility-warning"
+        ><DIV class="compatibility-warning__content">
+          <H3 class="compatibility-warning__title"
+            >您的浏览器版本太低啦，会严重影响浏览体验</H3
+          >
+          <P>如果您正在使用多核浏览器（如360、QQ浏览器）请切换到极速模式</P>
+          <DIV class="compatibility-warning__browser">
+            <P class="compatibility-warning__browser__title">推荐浏览器</P>
+            <UL class="compatibility-warning__browser__recommend">
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--ie"
+                ></I
+                ><A
+                  href="https://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads"
+                  >IE10以上</A
+                >
+              </LI>
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--edge"
+                ></I
+                ><A href="https://www.microsoft.com/en/windows/microsoft-edge"
+                  >微软edge</A
+                >
+              </LI>
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--firefox"
+                ></I
+                ><A href="https://www.firefox.com/">Firefox</A>
+              </LI>
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--chrome"
+                ></I
+                ><A
+                  href="https://www.google.com/chrome/browser/desktop/index.html?"
+                  >Chrome</A
+                >
+              </LI>
+              <LI
+                ><I
+                  class="compatibility-warning__icons compatibility-warning__icons--safari"
+                ></I
+                ><A href="https://www.apple.com/safari">Safari</A>
+              </LI></UL
+            ><A
+              class="compatibility-warning__browser__continue"
+              onclick="closeWarning()"
+              >继续在当前浏览器访问</A
+            >
+          </DIV></DIV
+        ></DIV
+      >
+    <![endif]-->
+
+    <div class="cnnbfdc-header">
+      <div class="cnnbfdc-header__top">
+        <div class="layout-center">
+          <div class="cnnbfdc-header__top__left">
+            <img src="../shared/imgs/logo.png" />
+          </div>
+          <ul class="cnnbfdc-header__top__center">
+            <li><a href="../home/index.html">首页</a></li>
+            <li><a href="../building/index.html">商品房</a></li>
+            <li><a href="../esf/index.html">二手房</a></li>
+            <li><a href="../building/index.html">住房租赁</a></li>
+            <li class="active"><a href="../cx/index.html">信用评价</a></li>
+          </ul>
+          <ul class="cnnbfdc-header__top__right">
+            <li>
+              <a href="../querytools/index.html"
+                ><i class="icon-compass"></i>办事大厅</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="cnnbfdc-header__center">
+        <div class="layout-center">
+          <ul name="ul_esf" class="cnnbfdc-header__center__top">
+            <li name="index"><a href="index.html">二手房首页</a></li>
+            <li name="house-list"><a href="house-list.html">房源</a></li>
+            <li name="contract"><a href="contract.html">信息公示</a></li>
+            <li name="contract-verification">
+              <a href="contract-verification.html">房源验真</a>
+            </li>
+            <li name="contract-query" class="active">
+              <a href="contract-query.html">合同查询</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="layout-center">
+      <!--[if lte IE 9]>
+        <DIV class="compatibility-warning" id="compatibility-warning"
+          ><DIV class="compatibility-warning__content">
+            <H3 class="compatibility-warning__title"
+              >您的浏览器版本太低啦，该模块无法显示</H3
+            >
+            <P>如果您正在使用多核浏览器（如360、QQ浏览器）请切换到极速模式</P>
+            <DIV class="compatibility-warning__browser">
+              <P class="compatibility-warning__browser__title">推荐浏览器</P>
+              <UL class="compatibility-warning__browser__recommend">
+                <LI
+                  ><I
+                    class="compatibility-warning__icons compatibility-warning__icons--ie"
+                  ></I
+                  ><A
+                    href="https://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads"
+                    >IE10以上</A
+                  >
+                </LI>
+                <LI
+                  ><I
+                    class="compatibility-warning__icons compatibility-warning__icons--edge"
+                  ></I
+                  ><A
+                    href="https://www.microsoft.com/en-us/windows/microsoft-edge"
+                    >微软edge</A
+                  >
+                </LI>
+                <LI
+                  ><I
+                    class="compatibility-warning__icons compatibility-warning__icons--firefox"
+                  ></I
+                  ><A href="https://www.firefox.com/">Firefox</A>
+                </LI>
+                <LI
+                  ><I
+                    class="compatibility-warning__icons compatibility-warning__icons--chrome"
+                  ></I
+                  ><A
+                    href="https://www.google.com/chrome/browser/desktop/index.html?"
+                    >Chrome</A
+                  >
+                </LI>
+                <LI
+                  ><I
+                    class="compatibility-warning__icons compatibility-warning__icons--safari"
+                  ></I
+                  ><A href="https://www.apple.com/safari">Safari</A>
+                </LI></UL
+              ></DIV
+            ></DIV
+          ></DIV
+        >
+      <![endif]-->
+
+      <div id="contract-query-form">
+        <div data-reactroot="" class="cnnbfdc-contract-confirm">
+          <div class="ant-layout ant-layout-has-sider">
+            <div
+              class="ant-layout-sider"
+              style="flex: 0 0 310px; max-width: 310px; min-width: 310px; width: 310px;"
+            >
+              <div class="ant-layout-sider-children">
+                <div class="cnnbfdc-contract-confirm__form">
+                  <div class="contract-form">
+                    <h2>房源验真通道</h2>
+                    <form class="ant-form ant-form-horizontal">
+                      <div class="ant-row ant-form-item">
+                        <div class="ant-form-item-control-wrapper">
+                          <div class="ant-form-item-control ">
+                            <input
+                              type="text"
+                              placeholder="请输入房源核验码"
+                              value=""
+                              id="vcode"
+                              data-__meta="[object Object]"
+                              class="ant-input ant-input-lg"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tips"></div>
+                      <div class="ant-row ant-form-item" style="margin: 0px;">
+                        <div
+                          class="ant-form-item-control-wrapper ant-col-sm-16 ant-col-sm-offset-8"
+                        >
+                          <div class="ant-form-item-control ">
+                            <button
+                              type="submit"
+                              class="ant-btn ant-btn-primary ant-btn-lg"
+                            >
+                              <span>提交查询</span>
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                    <div class="vcode-warnning">
+                      <h4>温馨提示：</h4>
+                      <ul>
+                        <li>
+                          房屋权利状态信息随不动产登记共享信息动态更新，最终以不动产登记资料记载为准。
+                        </li>
+                        <li>本平台发布的挂牌信息由经纪机构提供，仅供参考。</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="ant-layout"
+              style="background: rgb(255, 255, 255); padding: 0px 0px 0px 40px;"
+            >
+              <div></div>
+              <div class="cnnbfdc-contract-confirm__result">
+                <div class="zhu">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbwAAAAxCAYAAACh6RxtAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDpGODM3MURFQTE2RTFFNjExQTgxNzk1ODZDOTEwQjU4MCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDoxNzE2OUQxMkJERUIxMUU3QjhCOEJENEYwNUVERjhCQiIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDoxNzE2OUQxMUJERUIxMUU3QjhCOEJENEYwNUVERjhCQiIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M2IChXaW5kb3dzKSI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjE4NzNBMENGQjI3OUU3MTFCQTBDRTU1QkNDMkNGQURBIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOkY4MzcxREVBMTZFMUU2MTFBODE3OTU4NkM5MTBCNTgwIi8+IDwvcmRmOkRlc2NyaXB0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"
+                    alt=""
+                  />
+                </div>
+                <div class="house-status__front-tip">
+                  <p>
+                    <!-- react-text: 31 -->此前，《关于加强房地产经纪管理的实施意见》对存量房买卖网签手续的流程做出了详细规定，无论是当事人自行协商成交还是委托经纪机构，都必须有“房源核验”这一步骤，即通过存量房买卖网上签约备案系统进行房源核验、并生成房源核验码。平台将及时更新已核验房源的状态信息，并根据状态变化情况限制其交易，确保出售房源的真实可靠。
+                    但目前互联网上主要存在两种“欺骗性”挂牌行为：<!-- /react-text --><br />
+                    <ul>
+                      <li>
+                        一、
+                        互联网上的二手房源拥有真实的房源核验码，但其下的房屋并非真实房屋信息。
+                      </li>
+                      <li>
+                        二、
+                        互联网上的二手房源拥有“相似”的房源核验码，实际上并未在官方渠道进行过房源核验。
+                      </li>
+                    </ul>
+                  </p>
+                  <p>
+                    因此，本平台推出“房源验真通道”，提供房源核验码查询服务，若房源核验码为真，则会显示该房源核验码下的真实房屋信息以供大众核对。
+                  </p>
+                </div>
+                <div class="use-intro__text"></div>
+                <div class="use-intro__pic1--vcode"></div>
+                <div class="use-intro__text"></div>
+                <div class=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="region region-bottom">
+      <div class="block block-block first last odd" id="block-block-2">
+        <div class="bottom-navigation layout-center jquery-once-1-processed">
+          <ul class="bottom-navigation__list clearfix">
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about/website">平台介绍</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about">关于我们</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about/contactus">联系我们</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about/privacy">隐私声明</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//esf.cnnbfdc.com/about/map">网站地图</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//www.cnnbfdc.com/page/notice/clf.html" target="__blank"
+                >业务平台登录</a
+              >
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//www.cnnbfdc.com/home/newshome">房产新闻</a>
+            </li>
+            <li class="bottom-navigation__item">
+              <a href="//www.cnnbfdc.com/download">下载中心</a>
+            </li>
+          </ul>
+          <div class="bottom-navigation__tabs">
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item active">
+                <a href="#">国家部委厅网站</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="#">六安市政府部门网站</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="#">六安市经纪机构网站</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="#">六安市房地产开发商网站</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="#">六安市房地产信息服务网站</a>
+              </li>
+            </ul>
+          </div>
+          <div class="bottom-navigation__tab-content">
+            <ul class="bottom-navigation__list active clearfix">
+              <li class="bottom-navigation__item">
+                <a href="http://www.gov.cn/" target="_blank"
+                  >中央政府门户网站</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.chinatax.gov.cn/" target="_blank"
+                  >国家税务总局</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.realestate.cei.gov.cn/" target="_blank"
+                  >中国房地产信息网</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.wyzg.org/" target="_blank"
+                  >中国房地产行业协</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.mohurd.gov.cn/" target="_blank">住建部</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.pbc.gov.cn/" target="_blank">人民银行</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.sdpc.gov.cn/" target="_blank"
+                  >中国发改委员会</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.zjjs.com.cn/" target="_blank"
+                  >浙江省建设厅</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.mlr.gov.cn/" target="_blank">国土资源部</a>
+              </li>
+            </ul>
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item">
+                <a href="http://www.ningbo.gov.cn/" target="_blank"
+                  >六安政府网
+                </a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbdpc.gov.cn/" target="_blank"
+                  >中国房地产行业协</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nblr.gov.cn/" target="_blank"
+                  >市国土资源局</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbplan.gov.cn/" target="_blank"
+                  >六安市规划局</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://nb.wenming.cn/" target="_blank">六安文明网</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbcs.gov.cn/" target="_blank">市财税局</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbjs.gov.cn/" target="_blank"
+                  >六安市住房和城乡建设委员会</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nbgjj.com/" target="_blank"
+                  >六安市住房公积金管理中心</a
+                >
+              </li>
+            </ul>
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item"><a href="##">暂无 </a></li>
+            </ul>
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item"><a href="##"> 暂无 </a></li>
+            </ul>
+            <ul class="bottom-navigation__list clearfix">
+              <li class="bottom-navigation__item">
+                <a href="http://www.xinhuanet.com/house/" target="_blank">
+                  新华网房产
+                </a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.nb-fx.cn/" target="_blank"
+                  >六安市房地产业协会</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://nb.house.sina.com.cn/" target="_blank"
+                  >新浪乐居</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://house.cnool.net/" target="_blank"
+                  >东方热线房产网</a
+                >
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://house.focus.cn/" target="_blank"
+                  >搜狐焦点房产
+                </a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://nb.soufun.com/" target="_blank">搜房网六安</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.ihoome.com/" target="_blank">爱家网</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://nb.house.qq.com/" target="_blank">腾讯房产</a>
+              </li>
+              <li class="bottom-navigation__item">
+                <a href="http://www.china-crb.cn/" target="_blank"
+                  >中国房地产网</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="bottom">
+          <div class="layout-center">
+            Copyright@2001-2017 CNNBFDC.COM All Rights Reserved
+            浙ICP备05082368号
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
