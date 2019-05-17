@@ -1094,28 +1094,7 @@
             </li>
           </ul>
           <div style="text-align:center;">
-            <div class="pagination-container">
-              <ul class="pagination">
-                <li class="PagedList-skipToPrevious">
-                  <a href="/home/houselist?page=1" rel="prev">上一页</a>
-                </li>
-                <li><a href="/home/houselist?page=1">1</a></li>
-                <li class="active"><a>2</a></li>
-                <li><a href="/home/houselist?page=3">3</a></li>
-                <li><a href="/home/houselist?page=4">4</a></li>
-                <li><a href="/home/houselist?page=5">5</a></li>
-                <li><a href="/home/houselist?page=6">6</a></li>
-                <li><a href="/home/houselist?page=7">7</a></li>
-                <li><a href="/home/houselist?page=8">8</a></li>
-                <li class="disabled PagedList-ellipses"><a>&#8230;</a></li>
-                <li class="PagedList-skipToNext">
-                  <a href="/home/houselist?page=3" rel="next">下一页</a>
-                </li>
-                <li class="PagedList-skipToLast">
-                  <a href="/home/houselist?page=8049">尾页</a>
-                </li>
-              </ul>
-            </div>
+            <div class="pagination-container"  id="pagination"></div>
           </div>
         </div>
         <div class="listbody__right" id="sidebar">
@@ -1242,6 +1221,7 @@
     <script>
         tools.renderHeader(document.getElementById("header"), {logoUrl: "../shared/imgs/logo.png"});
         tools.renderFooter(document.getElementById("footer"));
+        tools.renderPagination(document.getElementById("pagination"), {onPageChange: function(e){console.log(e)}, pageCount: 199});
     </script>
     <script>
       $(function() {
