@@ -1,0 +1,49 @@
+.layui-laydate-content th {
+	background-color: #3281CD;
+	color: white !important;
+}
+
+.layui-select-title .layui-input {
+	background-color: #3281CD;
+	color: white;
+}
+
+.layui-select-title .layui-edge {
+	border-top-color: white;
+}
+
+.layui-input-inline input {
+	border-radius: 5px;
+}
+
+.layui-table th {
+	background-color: #f5f5f5;
+	color: black;
+	text-align: center;
+}
+
+.layui-table td {
+	text-align: center;
+}
+
+.layui-table tbody tr:hover{
+	background-color: #ebf2fa;			
+}
+.layui-table[lay-size=lg] td, .layui-table[lay-size=lg] th {
+    padding: 15px 20px;
+}
+
+.layui-select-title .layui-unselect::-webkit-input-placeholder {
+    color: white;
+}
+.layui-select-title .layui-unselect:-moz-placeholder {
+    color: white;
+}
+.layui-select-title .layui-unselect:-ms-input-placeholder {
+    color: white;
+}
+.layui-form-label {
+    padding:9px 0px;
+}
+
+

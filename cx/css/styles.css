@@ -8128,7 +8128,7 @@ html.lt-ie9 .house-vinfo__size {
   width: 160px;
   height: 160px;
   margin: 0 auto;
-  background-image: url(../sass/components/filter-list/result_empty.png);
+  background-image: url(../imgs/result_empty.png);
   background-size: 100%;
 }
 
@@ -13203,7 +13203,7 @@ input:focus {
 }
 
 .cnnbfdc-header .search__submit {
-  background-image: url(../img/search.png);
+  background-image: url(../imgs/search.png);
   background-repeat: no-repeat;
   background-color: #3281CD;
   background-position: 12px;

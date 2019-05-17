@@ -54,97 +54,11 @@
       }
     </style>
 
-    <script src="../shared/js/jquery-1.12.4.min.js"></script>
-    <script src="../shared/js/tools.js"></script>
-    <!--[if lte IE 9]>
-      <link rel="stylesheet" href="/src/css/ie8.css" />
-      <script src="/src/js/PIE_IE678.js"></script>
-      <script src="/src/js/html5shiv.min.js"></script>
-      <script src="/src/js/rem.min.js"></script>
-      <script src="/src/js/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body class="page-home">
-    <!--[if lte IE 9]>
-      <DIV class="compatibility-warning" id="compatibility-warning"
-        ><DIV class="compatibility-warning__content">
-          <H3 class="compatibility-warning__title"
-            >您的浏览器版本太低啦，会严重影响浏览体验</H3
-          >
-          <P>如果您正在使用多核浏览器（如360、QQ浏览器）请切换到极速模式</P>
-          <DIV class="compatibility-warning__browser">
-            <P class="compatibility-warning__browser__title">推荐浏览器</P>
-            <UL class="compatibility-warning__browser__recommend">
-              <LI
-                ><I
-                  class="compatibility-warning__icons compatibility-warning__icons--ie"
-                ></I
-                ><A
-                  href="https://support.microsoft.com/zh-cn/help/17621/internet-explorer-downloads"
-                  >IE10以上</A
-                >
-              </LI>
-              <LI
-                ><I
-                  class="compatibility-warning__icons compatibility-warning__icons--edge"
-                ></I
-                ><A
-                  href="https://www.microsoft.com/en-us/windows/microsoft-edge"
-                  >微软edge</A
-                >
-              </LI>
-              <LI
-                ><I
-                  class="compatibility-warning__icons compatibility-warning__icons--firefox"
-                ></I
-                ><A href="https://www.firefox.com/">Firefox</A>
-              </LI>
-              <LI
-                ><I
-                  class="compatibility-warning__icons compatibility-warning__icons--chrome"
-                ></I
-                ><A
-                  href="https://www.google.com/chrome/browser/desktop/index.html?"
-                  >Chrome</A
-                >
-              </LI>
-              <LI
-                ><I
-                  class="compatibility-warning__icons compatibility-warning__icons--safari"
-                ></I
-                ><A href="https://www.apple.com/safari">Safari</A>
-              </LI></UL
-            ><A
-              class="compatibility-warning__browser__continue"
-              onclick="closeWarning()"
-              >继续在当前浏览器访问</A
-            >
-          </DIV></DIV
-        ></DIV
-      >
-    <![endif]-->
-
+</head>
+<body class="page-home">
     <div class="cnnbfdc-header">
       <div class="cnnbfdc-header__top">
-        <div class="layout-center">
-          <div class="cnnbfdc-header__top__left">
-            <img src="../shared/imgs/logo.png" />
-          </div>
-          <ul class="cnnbfdc-header__top__center">
-            <li><a href="../home/index.html">首页</a></li>
-            <li><a href="../building/index.html">商品房</a></li>
-            <li><a href="../esf/index.html">二手房</a></li>
-            <li><a href="../building/index.html">住房租赁</a></li>
-            <li class="active"><a href="../cx/index.html">信用评价</a></li>
-          </ul>
-          <ul class="cnnbfdc-header__top__right">
-            <li>
-              <a href="../querytools/index.html"
-                ><i class="icon-compass"></i>办事大厅</a
-              >
-            </li>
-          </ul>
-        </div>
+        <div class="layout-center" id="header"></div>
       </div>
       <div class="cnnbfdc-header__center">
         <div class="layout-center">
@@ -163,42 +77,42 @@
     </div>
 
     <div class="banner"></div>
-
+    
     <div class="container">
       <div class="view-filters" style="margin-top:20px;">
-        <div class="filter-lists">
-          <div class="filter-lists__title" style="padding:30px .4rem">
-            <figure
-              class="icons icons--map"
-              style="margin: .2rem .3rem 0 .7rem;"
+          <div class="filter-lists">
+            <div class="filter-lists__title" style="padding:30px .4rem">
+                <figure
+                class="icons icons--map"
+                style="margin: .2rem .3rem 0 .7rem;"
             ></figure>
             <span>区域</span>
           </div>
           <ul class="filter-list">
             <li class="leaf">
               <a
-                href="/?rankType=%E5%85%A8%E9%83%A8"
-                rel="nofollow"
-                class="facetapi-inactive selected "
-                >不限
+              href="/?rankType=%E5%85%A8%E9%83%A8"
+              rel="nofollow"
+              class="facetapi-inactive selected "
+              >不限
               </a>
             </li>
             <li class="leaf">
               <a
-                href="/?d=544ae4ee-c0b1-4d1f-8f1f-54e39e0f5f9a&amp;rankType=%E5%85%A8%E9%83%A8"
-                rel="nofollow"
+              href="/?d=544ae4ee-c0b1-4d1f-8f1f-54e39e0f5f9a&amp;rankType=%E5%85%A8%E9%83%A8"
+              rel="nofollow"
                 class="facetapi-inactive "
                 >海曙区
               </a>
             </li>
             <li class="leaf">
               <a
-                href="/?d=ebea6d97-b247-4902-993b-9d1ac819ecae&amp;rankType=%E5%85%A8%E9%83%A8"
-                rel="nofollow"
-                class="facetapi-inactive "
-                >江北区
-              </a>
-            </li>
+              href="/?d=ebea6d97-b247-4902-993b-9d1ac819ecae&amp;rankType=%E5%85%A8%E9%83%A8"
+              rel="nofollow"
+              class="facetapi-inactive "
+              >江北区
+            </a>
+          </li>
             <li class="leaf">
               <a
                 href="/?d=a34cac6c-5e49-4976-9866-e5c7325194c6&amp;rankType=%E5%85%A8%E9%83%A8"
@@ -209,54 +123,54 @@
             </li>
             <li class="leaf">
               <a
-                href="/?d=b2f96919-90c3-4882-b939-6ffb648a2beb&amp;rankType=%E5%85%A8%E9%83%A8"
-                rel="nofollow"
-                class="facetapi-inactive "
-                >镇海区
-              </a>
-            </li>
+              href="/?d=b2f96919-90c3-4882-b939-6ffb648a2beb&amp;rankType=%E5%85%A8%E9%83%A8"
+              rel="nofollow"
+              class="facetapi-inactive "
+              >镇海区
+            </a>
+          </li>
             <li class="leaf">
               <a
-                href="/?d=141d5e92-5f00-43a2-b040-011970d9a7e2&amp;rankType=%E5%85%A8%E9%83%A8"
-                rel="nofollow"
-                class="facetapi-inactive "
-                >北仑区
-              </a>
-            </li>
-            <li class="leaf">
-              <a
-                href="/?d=751e10e8-1f75-4bf3-aef5-17a8a43d638b&amp;rankType=%E5%85%A8%E9%83%A8"
-                rel="nofollow"
+              href="/?d=141d5e92-5f00-43a2-b040-011970d9a7e2&amp;rankType=%E5%85%A8%E9%83%A8"
+              rel="nofollow"
+              class="facetapi-inactive "
+              >北仑区
+            </a>
+          </li>
+          <li class="leaf">
+            <a
+            href="/?d=751e10e8-1f75-4bf3-aef5-17a8a43d638b&amp;rankType=%E5%85%A8%E9%83%A8"
+            rel="nofollow"
                 class="facetapi-inactive "
                 >高新区
               </a>
             </li>
             <li class="leaf">
               <a
-                href="/?d=b528551c-4b88-431a-8047-9285cc9d30d9&amp;rankType=%E5%85%A8%E9%83%A8"
-                rel="nofollow"
-                class="facetapi-inactive "
-                >东钱湖
-              </a>
-            </li>
-            <li class="leaf">
-              <a
-                href="/?d=60f0232f-04d2-4eec-a133-a2abffcf0fda&amp;rankType=%E5%85%A8%E9%83%A8"
-                rel="nofollow"
-                class="facetapi-inactive "
+              href="/?d=b528551c-4b88-431a-8047-9285cc9d30d9&amp;rankType=%E5%85%A8%E9%83%A8"
+              rel="nofollow"
+              class="facetapi-inactive "
+              >东钱湖
+            </a>
+          </li>
+          <li class="leaf">
+            <a
+            href="/?d=60f0232f-04d2-4eec-a133-a2abffcf0fda&amp;rankType=%E5%85%A8%E9%83%A8"
+            rel="nofollow"
+            class="facetapi-inactive "
                 >梅山
               </a>
             </li>
             <li class="leaf">
               <a
-                href="/?d=7f572830-24c3-4078-bcc8-40adf8d7b6fa&amp;rankType=%E5%85%A8%E9%83%A8"
-                rel="nofollow"
-                class="facetapi-inactive "
-                >保税区
-              </a>
-            </li>
-            <li class="leaf">
-              <a
+              href="/?d=7f572830-24c3-4078-bcc8-40adf8d7b6fa&amp;rankType=%E5%85%A8%E9%83%A8"
+              rel="nofollow"
+              class="facetapi-inactive "
+              >保税区
+            </a>
+          </li>
+          <li class="leaf">
+            <a
                 href="/?d=943c10d8-a054-474c-ab0d-e4581dcd25f3&amp;rankType=%E5%85%A8%E9%83%A8"
                 rel="nofollow"
                 class="facetapi-inactive "
@@ -273,31 +187,31 @@
             </li>
             <li class="leaf">
               <a
-                href="/?d=efd80151-73a6-46d8-a683-9fadc4313cf4&amp;rankType=%E5%85%A8%E9%83%A8"
-                rel="nofollow"
+              href="/?d=efd80151-73a6-46d8-a683-9fadc4313cf4&amp;rankType=%E5%85%A8%E9%83%A8"
+              rel="nofollow"
                 class="facetapi-inactive "
                 >余姚市
               </a>
             </li>
             <li class="leaf">
               <a
-                href="/?d=ef3f132d-d9fa-4c12-9772-3844f5e871a5&amp;rankType=%E5%85%A8%E9%83%A8"
-                rel="nofollow"
-                class="facetapi-inactive "
-                >慈溪市
+              href="/?d=ef3f132d-d9fa-4c12-9772-3844f5e871a5&amp;rankType=%E5%85%A8%E9%83%A8"
+              rel="nofollow"
+              class="facetapi-inactive "
+              >慈溪市
               </a>
             </li>
             <li class="leaf">
               <a
-                href="/?d=82508aac-46d6-4c29-a477-03e18040f3ed&amp;rankType=%E5%85%A8%E9%83%A8"
-                rel="nofollow"
+              href="/?d=82508aac-46d6-4c29-a477-03e18040f3ed&amp;rankType=%E5%85%A8%E9%83%A8"
+              rel="nofollow"
                 class="facetapi-inactive "
                 >宁海县
               </a>
             </li>
             <li class="leaf" style="margin:5px 0;">
               <a
-                href="/?d=88c9fcce-72a7-4ccf-8565-5406111509b3&amp;rankType=%E5%85%A8%E9%83%A8"
+              href="/?d=88c9fcce-72a7-4ccf-8565-5406111509b3&amp;rankType=%E5%85%A8%E9%83%A8"
                 rel="nofollow"
                 class="facetapi-inactive "
                 >象山县
@@ -305,7 +219,7 @@
             </li>
             <li class="leaf">
               <a
-                href="/?d=601a0256-8fad-4464-8c54-1deebe2f3357&amp;rankType=%E5%85%A8%E9%83%A8"
+              href="/?d=601a0256-8fad-4464-8c54-1deebe2f3357&amp;rankType=%E5%85%A8%E9%83%A8"
                 rel="nofollow"
                 class="facetapi-inactive "
                 >杭州湾
@@ -313,45 +227,45 @@
             </li>
           </ul>
         </div>
-
+        
         <div class="filter-lists" style="margin-top:-1px;">
-          <div class="filter-lists__title">
-            <figure
+            <div class="filter-lists__title">
+              <figure
               class="icons icons--time"
               style="margin: 0rem .3rem 0 .7rem;"
-            ></figure>
-            <span>时间</span>
-          </div>
-          <ul class="filter-list">
+              ></figure>
+              <span>时间</span>
+            </div>
+            <ul class="filter-list">
             <li class="layui-this">
               <a href="/?rankType=%E5%85%A8%E9%83%A8" class="selected">全部</a>
             </li>
             <li>
               <a href="/?rankType=%E8%BF%91%E4%B8%80%E5%B9%B4" class=""
                 >近一年</a
-              >
-            </li>
-            <li>
-              <a href="/?rankType=%E8%BF%91%E4%B8%80%E6%9C%88" class=""
+                >
+              </li>
+              <li>
+                <a href="/?rankType=%E8%BF%91%E4%B8%80%E6%9C%88" class=""
                 >近一月</a
               >
             </li>
             <li>
               <a href="/?rankType=%E8%BF%91%E4%B8%80%E5%91%A8" class=""
-                >近一周</a
+              >近一周</a
               >
             </li>
           </ul>
         </div>
       </div>
-
+      
       <div class="headline">
         <span>门店排行榜</span>
         <small style="color:#999;margin-right:-21px;"
-          >累计时间从2017年5月1日开始到昨日截止</small
+        >累计时间从2017年5月1日开始到昨日截止</small
         >
       </div>
-
+      
       <div class="clearfix">
         <div class="list list-right">
           <div class="list__title">
@@ -361,18 +275,18 @@
           <div class="list__item">
             <ul>
               <li
-                name="view-row"
-                data-enterpriseguid="122dc8f0-0563-495e-b6db-20f6b2c04ab4"
+              name="view-row"
+              data-enterpriseguid="122dc8f0-0563-495e-b6db-20f6b2c04ab4"
               >
-                <div class="number">
+              <div class="number">
                   <div class="circle"><span>1</span></div>
                 </div>
                 <span
-                  ><a
-                    href="/agency/details?agencyGUID=280d1687-9f76-4561-855e-7146314d8342&amp;rankType=%E5%85%A8%E9%83%A8"
-                    name="agencyName"
-                    >六安市南天房地产经纪有限公司兰亭绿源分公司</a
-                  ></span
+                ><a
+                href="/agency/details?agencyGUID=280d1687-9f76-4561-855e-7146314d8342&amp;rankType=%E5%85%A8%E9%83%A8"
+                name="agencyName"
+                >六安市南天房地产经纪有限公司兰亭绿源分公司</a
+                ></span
                 >
                 <h5>426</h5>
               </li>
@@ -380,68 +294,67 @@
                 name="view-row"
                 data-enterpriseguid="122dc8f0-0563-495e-b6db-20f6b2c04ab4"
               >
-                <div class="number bcolor2">
-                  <div class="circle bgcolor2"><span>2</span></div>
-                </div>
-                <span
-                  ><a
-                    href="/agency/details?agencyGUID=3a5f9387-31b4-443d-ba8f-3c0fb1f80f2c&amp;rankType=%E5%85%A8%E9%83%A8"
-                    name="agencyName"
-                    >六安市南天房地产经纪有限公司</a
-                  ></span
-                >
-                <h5>183</h5>
-              </li>
-              <li
-                name="view-row"
-                data-enterpriseguid="ef65c783-86d1-412f-9f62-040c8d48819f"
+              <div class="number bcolor2">
+                <div class="circle bgcolor2"><span>2</span></div>
+              </div>
+              <span
+              ><a
+              href="/agency/details?agencyGUID=3a5f9387-31b4-443d-ba8f-3c0fb1f80f2c&amp;rankType=%E5%85%A8%E9%83%A8"
+              name="agencyName"
+              >六安市南天房地产经纪有限公司</a
+              ></span
               >
-                <div class="number bcolor2 bcolor3">
-                  <div class="circle bgcolor2 bgcolor3"><span>3</span></div>
+              <h5>183</h5>
+            </li>
+            <li
+            name="view-row"
+            data-enterpriseguid="ef65c783-86d1-412f-9f62-040c8d48819f"
+            >
+            <div class="number bcolor2 bcolor3">
+              <div class="circle bgcolor2 bgcolor3"><span>3</span></div>
                 </div>
                 <span
-                  ><a
+                ><a
                     href="/agency/details?agencyGUID=26b9dbdc-8038-4aa8-a351-bc4e67eca782&amp;rankType=%E5%85%A8%E9%83%A8"
                     name="agencyName"
                     >六安市天天红利房地产信息咨询有限公司</a
-                  ></span
-                >
-                <h5>98</h5>
-              </li>
-              <li
-                name="view-row"
-                data-enterpriseguid="70a7d0e1-742a-48e0-bcf0-83c9f92b9993"
-              >
-                <div class="number bcolor2 bcolor3 bcolor4">
-                  <div class="circle bgcolor2 bgcolor3 bgcolor4">
-                    <span>4</span>
+                    ></span
+                    >
+                    <h5>98</h5>
+                  </li>
+                  <li
+                  name="view-row"
+                  data-enterpriseguid="70a7d0e1-742a-48e0-bcf0-83c9f92b9993"
+                  >
+                  <div class="number bcolor2 bcolor3 bcolor4">
+                    <div class="circle bgcolor2 bgcolor3 bgcolor4">
+                      <span>4</span>
+                    </div>
                   </div>
-                </div>
-                <span
+                  <span
                   ><a
-                    href="/agency/details?agencyGUID=722e7905-4f56-e711-bdff-005056bc0b09&amp;rankType=%E5%85%A8%E9%83%A8"
-                    name="agencyName"
-                    >六安百居易不动产经纪有限公司</a
+                  href="/agency/details?agencyGUID=722e7905-4f56-e711-bdff-005056bc0b09&amp;rankType=%E5%85%A8%E9%83%A8"
+                  name="agencyName"
+                  >六安百居易不动产经纪有限公司</a
                   ></span
-                >
-                <h5>90</h5>
-              </li>
+                  >
+                  <h5>90</h5>
+                </li>
               <li
-                name="view-row"
+              name="view-row"
                 data-enterpriseguid="26d6de26-016e-49e6-b2c2-415e0af5bcb8"
-              >
+                >
                 <div class="number bcolor2 bcolor3 bcolor4 bcolor5">
                   <div class="circle bgcolor2 bgcolor3 bgcolor4 bgcolor5">
                     <span>5</span>
                   </div>
                 </div>
                 <span
-                  ><a
-                    href="/agency/details?agencyGUID=849d55f2-b862-e711-bdff-005056bc0b09&amp;rankType=%E5%85%A8%E9%83%A8"
-                    name="agencyName"
-                    >余姚市顺意房地产经纪有限公司</a
-                  ></span
-                >
+                ><a
+                href="/agency/details?agencyGUID=849d55f2-b862-e711-bdff-005056bc0b09&amp;rankType=%E5%85%A8%E9%83%A8"
+                name="agencyName"
+                >余姚市顺意房地产经纪有限公司</a
+                ></span>
                 <h5>90</h5>
               </li>
               <li>
@@ -1214,250 +1127,17 @@
         </div>
       </div>
     </div>
-
-    <div class="region region-bottom">
-      <div class="block block-block first last odd" id="block-block-2">
-        <div class="bottom-navigation layout-center jquery-once-1-processed">
-          <ul class="bottom-navigation__list clearfix">
-            <li class="bottom-navigation__item">
-              <a href="//esf.cnnbfdc.com/about/website">平台介绍</a>
-            </li>
-            <li class="bottom-navigation__item">
-              <a href="//esf.cnnbfdc.com/about">关于我们</a>
-            </li>
-            <li class="bottom-navigation__item">
-              <a href="//esf.cnnbfdc.com/about/contactus">联系我们</a>
-            </li>
-            <li class="bottom-navigation__item">
-              <a href="//esf.cnnbfdc.com/about/privacy">隐私声明</a>
-            </li>
-            <li class="bottom-navigation__item">
-              <a href="//esf.cnnbfdc.com/about/map">网站地图</a>
-            </li>
-            <li class="bottom-navigation__item">
-              <a href="//www.cnnbfdc.com/page/notice/clf.html" target="__blank"
-                >业务平台登录</a
-              >
-            </li>
-            <li class="bottom-navigation__item">
-              <a href="//www.cnnbfdc.com/home/newshome">房产新闻</a>
-            </li>
-            <li class="bottom-navigation__item">
-              <a href="//www.cnnbfdc.com/download">下载中心</a>
-            </li>
-          </ul>
-          <div class="bottom-navigation__tabs">
-            <ul class="bottom-navigation__list clearfix">
-              <li class="bottom-navigation__item active">
-                <a href="#">国家部委厅网站</a>
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="#">六安市政府部门网站</a>
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="#">六安市经纪机构网站</a>
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="#">六安市房地产开发商网站</a>
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="#">六安市房地产信息服务网站</a>
-              </li>
-            </ul>
-          </div>
-          <div class="bottom-navigation__tab-content">
-            <ul class="bottom-navigation__list active clearfix">
-              <li class="bottom-navigation__item">
-                <a href="http://www.gov.cn/" target="_blank"
-                  >中央政府门户网站</a
-                >
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.chinatax.gov.cn/" target="_blank"
-                  >国家税务总局</a
-                >
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.realestate.cei.gov.cn/" target="_blank"
-                  >中国房地产信息网</a
-                >
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.wyzg.org/" target="_blank"
-                  >中国房地产行业协</a
-                >
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.mohurd.gov.cn/" target="_blank">住建部</a>
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.pbc.gov.cn/" target="_blank">人民银行</a>
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.sdpc.gov.cn/" target="_blank"
-                  >中国发改委员会</a
-                >
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.zjjs.com.cn/" target="_blank"
-                  >浙江省建设厅</a
-                >
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.mlr.gov.cn/" target="_blank">国土资源部</a>
-              </li>
-            </ul>
-            <ul class="bottom-navigation__list clearfix">
-              <li class="bottom-navigation__item">
-                <a href="http://www.ningbo.gov.cn/" target="_blank"
-                  >六安政府网
-                </a>
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.nbdpc.gov.cn/" target="_blank"
-                  >中国房地产行业协</a
-                >
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.nblr.gov.cn/" target="_blank"
-                  >市国土资源局</a
-                >
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.nbplan.gov.cn/" target="_blank"
-                  >六安市规划局</a
-                >
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://nb.wenming.cn/" target="_blank">六安文明网</a>
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.nbcs.gov.cn/" target="_blank">市财税局</a>
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.nbjs.gov.cn/" target="_blank"
-                  >六安市住房和城乡建设委员会</a
-                >
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.nbgjj.com/" target="_blank"
-                  >六安市住房公积金管理中心</a
-                >
-              </li>
-            </ul>
-            <ul class="bottom-navigation__list clearfix">
-              <li class="bottom-navigation__item"><a href="##">暂无 </a></li>
-            </ul>
-            <ul class="bottom-navigation__list clearfix">
-              <li class="bottom-navigation__item"><a href="##"> 暂无 </a></li>
-            </ul>
-            <ul class="bottom-navigation__list clearfix">
-              <li class="bottom-navigation__item">
-                <a href="http://www.xinhuanet.com/house/" target="_blank">
-                  新华网房产
-                </a>
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.nb-fx.cn/" target="_blank"
-                  >六安市房地产业协会</a
-                >
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://nb.house.sina.com.cn/" target="_blank"
-                  >新浪乐居</a
-                >
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://house.cnool.net/" target="_blank"
-                  >东方热线房产网</a
-                >
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://house.focus.cn/" target="_blank"
-                  >搜狐焦点房产
-                </a>
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://nb.soufun.com/" target="_blank">搜房网六安</a>
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.ihoome.com/" target="_blank">爱家网</a>
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://nb.house.qq.com/" target="_blank">腾讯房产</a>
-              </li>
-              <li class="bottom-navigation__item">
-                <a href="http://www.china-crb.cn/" target="_blank"
-                  >中国房地产网</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="bottom">
-          <div class="layout-center">
-            Copyright@2001-2017 CNNBFDC.COM All Rights Reserved
-            浙ICP备05082368号
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <script src="/src/js/share/propagationname.js"></script>
+    <div id="footer" class="region region-bottom"></div>
+    <script src="../shared/js/jquery-1.12.4.min.js"></script>
     <script src="../shared/js/moment.js"></script>
     <script src="../shared/js/scrollForever.min.js"></script>
+    <script src="../shared/js/react.min.js"></script>
+    <script src="../shared/js/react-dom.min.js"></script>
+    <script src="../tools/dist/tools.js"></script>
     <script>
-      $(function() {
-        $(".announcement__scroll").scrollForever({
-          continuous: false,
-          dir: "top",
-          delayTime: 2000,
-          num: 2
-        });
-
-        $(".list__title__question").hover(
-          function() {
-            $(this)
-              .parent()
-              .prev()
-              .show();
-          },
-          function() {
-            $(this)
-              .parent()
-              .prev()
-              .hide();
-          }
-        );
-      });
+     
+        tools.renderHeader(document.getElementById("header"), {logoUrl: "../shared/imgs/logo.png"});
+        tools.renderFooter(document.getElementById("footer"));
     </script>
   </body>
 </html>
-
-<script>
-  function closeWarning() {
-    $("#compatibility-warning").hide();
-  }
-
-  $(".bottom-navigation__tabs a").click(function(event) {
-    event.stopPropagation();
-    event.preventDefault();
-
-    var i = $(".bottom-navigation__tabs .bottom-navigation__item").index(
-      $(this).parent()
-    );
-
-    $(this)
-      .parent()
-      .addClass("active")
-      .siblings()
-      .removeClass("active");
-
-    $(".bottom-navigation__tab-content .bottom-navigation__list")
-      .removeClass("active")
-      .eq(i)
-      .addClass("active");
-
-      acitveHeaderItem("cx");
-  });
-</script>
