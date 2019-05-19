@@ -140,66 +140,8 @@
               </table>
             </div>
             <div style="text-align:center;">
-              <div class="pagination-container">
-                <ul class="pagination">
-                  <li class="active"><a>1</a></li>
-                  <li>
-                    <a
-                      href="/agency/DetailsHistoryContract?pageIndex=2&amp;agencyGUID=280d1687-9f76-4561-855e-7146314d8342"
-                      >2</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/agency/DetailsHistoryContract?pageIndex=3&amp;agencyGUID=280d1687-9f76-4561-855e-7146314d8342"
-                      >3</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/agency/DetailsHistoryContract?pageIndex=4&amp;agencyGUID=280d1687-9f76-4561-855e-7146314d8342"
-                      >4</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/agency/DetailsHistoryContract?pageIndex=5&amp;agencyGUID=280d1687-9f76-4561-855e-7146314d8342"
-                      >5</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/agency/DetailsHistoryContract?pageIndex=6&amp;agencyGUID=280d1687-9f76-4561-855e-7146314d8342"
-                      >6</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/agency/DetailsHistoryContract?pageIndex=7&amp;agencyGUID=280d1687-9f76-4561-855e-7146314d8342"
-                      >7</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="/agency/DetailsHistoryContract?pageIndex=8&amp;agencyGUID=280d1687-9f76-4561-855e-7146314d8342"
-                      >8</a
-                    >
-                  </li>
-                  <li class="disabled PagedList-ellipses"><a>&#8230;</a></li>
-                  <li class="PagedList-skipToNext">
-                    <a
-                      href="/agency/DetailsHistoryContract?pageIndex=2&amp;agencyGUID=280d1687-9f76-4561-855e-7146314d8342"
-                      rel="next"
-                      >下一页</a
-                    >
-                  </li>
-                  <li class="PagedList-skipToLast">
-                    <a
-                      href="/agency/DetailsHistoryContract?pageIndex=68&amp;agencyGUID=280d1687-9f76-4561-855e-7146314d8342"
-                      >尾页</a
-                    >
-                  </li>
-                </ul>
+              <div class="pagination-container" id="pagination">
+                
               </div>
             </div>
           </main>
@@ -214,6 +156,7 @@
     <script>
         tools.renderHeader(document.getElementById("header"), {logoUrl: "../shared/imgs/logo.png"});
         tools.renderFooter(document.getElementById("footer"));
+        tools.renderPagination(document.getElementById("pagination"), {onPageChange: function(e){console.log(e)}, pageCount: 199});
     </script>
     
   </body>

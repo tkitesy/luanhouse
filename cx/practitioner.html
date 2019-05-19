@@ -956,24 +956,8 @@
             </div>
           </div>
           <div style="text-align:center;">
-            <div class="pagination-container">
-              <ul class="pagination">
-                <li class="active"><a>1</a></li>
-                <li><a href="/practitioner?page=2">2</a></li>
-                <li><a href="/practitioner?page=3">3</a></li>
-                <li><a href="/practitioner?page=4">4</a></li>
-                <li><a href="/practitioner?page=5">5</a></li>
-                <li><a href="/practitioner?page=6">6</a></li>
-                <li><a href="/practitioner?page=7">7</a></li>
-                <li><a href="/practitioner?page=8">8</a></li>
-                <li class="disabled PagedList-ellipses"><a>&#8230;</a></li>
-                <li class="PagedList-skipToNext">
-                  <a href="/practitioner?page=2" rel="next">下一页</a>
-                </li>
-                <li class="PagedList-skipToLast">
-                  <a href="/practitioner?page=1373">尾页</a>
-                </li>
-              </ul>
+            <div class="pagination-container" id="pagination">
+             
             </div>
           </div>
         </main>
@@ -1292,35 +1276,35 @@
               .field-rep-photo
               .field-items
               .field-item-1::after {
-              background-image: url(../../src/img/no1.png);
+              background-image: url(imgs/no1.png);
             }
 
             .pane-rec-rep-sidebar
               .field-rep-photo
               .field-items
               .field-item-2::after {
-              background-image: url(../../src/img/no2.png);
+              background-image: url(imgs/no2.png);
             }
 
             .pane-rec-rep-sidebar
               .field-rep-photo
               .field-items
               .field-item-3::after {
-              background-image: url(../../src/img/no3.png);
+              background-image: url(imgs/no3.png);
             }
 
             .pane-rec-rep-sidebar
               .field-rep-photo
               .field-items
               .field-item-4::after {
-              background-image: url(../../src/img/no4.png);
+              background-image: url(imgs/no4.png);
             }
 
             .pane-rec-rep-sidebar
               .field-rep-photo
               .field-items
               .field-item-5::after {
-              background-image: url(../../src/img/no5.png);
+              background-image: url(imgs/no5.png);
             }
           </style>
           <div class="block block-block last even" id="block-block-3">
@@ -1395,6 +1379,7 @@
     <script>
         tools.renderHeader(document.getElementById("header"), {logoUrl: "../shared/imgs/logo.png"});
         tools.renderFooter(document.getElementById("footer"));
+        tools.renderPagination(document.getElementById("pagination"), {onPageChange: function(e){console.log(e)}, pageCount: 199});
     </script>
   </body>
 </html>

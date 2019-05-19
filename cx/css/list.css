@@ -1,0 +1,34 @@
+﻿.sorts__item {
+    float: none;
+}
+
+    .sorts__item:hover a {
+        border-bottom: none;
+    }
+
+    .sorts__item .selected {
+        border-bottom: none;
+    }
+
+
+.filter-list li a.selected {
+    display: inline !important;
+    margin: 0 !important;
+}
+
+.filter-lists {
+    margin-bottom: 20px !important;
+}
+
+.filter-lists__title {
+    width: 120px !important;
+    padding: 1.9rem .4rem !important;
+}
+
+.filter-lists .filter-list {
+    width: 87% !important;
+}
+
+    .filter-lists .filter-list li {
+        margin: 3px 0;
+    }

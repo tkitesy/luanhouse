@@ -412,24 +412,7 @@
           </tbody>
         </table>
         <div style="text-align:center;">
-          <div class="pagination-container">
-            <ul class="pagination">
-              <li class="active"><a>1</a></li>
-              <li><a href="/Contract?page=2">2</a></li>
-              <li><a href="/Contract?page=3">3</a></li>
-              <li><a href="/Contract?page=4">4</a></li>
-              <li><a href="/Contract?page=5">5</a></li>
-              <li><a href="/Contract?page=6">6</a></li>
-              <li><a href="/Contract?page=7">7</a></li>
-              <li><a href="/Contract?page=8">8</a></li>
-              <li class="disabled PagedList-ellipses"><a>&#8230;</a></li>
-              <li class="PagedList-skipToNext">
-                <a href="/Contract?page=2" rel="next">下一页</a>
-              </li>
-              <li class="PagedList-skipToLast">
-                <a href="/Contract?page=450">尾页</a>
-              </li>
-            </ul>
+          <div class="pagination-container" id="pagination">
           </div>
         </div>
       </div>
@@ -442,6 +425,7 @@
     <script>
         tools.renderHeader(document.getElementById("header"), {logoUrl: "../shared/imgs/logo.png"});
         tools.renderFooter(document.getElementById("footer"));
+        tools.renderPagination(document.getElementById("pagination"), {onPageChange: function(e){console.log(e)}, pageCount: 199});
     </script>
   </body>
 </html>

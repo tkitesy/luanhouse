@@ -902,11 +902,10 @@
                   <div style="text-align:center;">
                     <h2 class="element-invisible">页面</h2>
                     <div class="item-list" style="text-align:center;">
-                      <div class="pagination-container">
-                        <ul class="pagination">
-                          <li class="active"><a>1</a></li>
-                        </ul>
-                      </div>
+                      <div
+                        class="pagination-container"
+                        id="pagination"
+                      ></div>
                     </div>
                   </div>
                 </div>
@@ -989,6 +988,12 @@
         logoUrl: "../shared/imgs/logo.png"
       });
       tools.renderFooter(document.getElementById("footer"));
+      tools.renderPagination(document.getElementById("pagination"), {
+        onPageChange: function(e) {
+          console.log(e);
+        },
+        pageCount: 199
+      });
     </script>
     <script type="text/javascript">
       $(function() {
