@@ -1,13 +1,15 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import $ from "jquery";
 
 export function Footer() {
+  const tabs = useRef()
+  const content = useRef()
   useEffect(() => {
-    $(".bottom-navigation__tabs a").click(function(event) {
+    $(tabs.current).find("a").click(function(event) {
       event.stopPropagation();
       event.preventDefault();
 
-      const i = $(".bottom-navigation__tabs .bottom-navigation__item").index(
+      const i = $(tabs.current).find(".bottom-navigation__item").index(
         $(this).parent()
       );
 
@@ -17,7 +19,7 @@ export function Footer() {
         .siblings()
         .removeClass("active");
 
-      $(".bottom-navigation__tab-content .bottom-navigation__list")
+      $(content.current).find(".bottom-navigation__list")
         .removeClass("active")
         .eq(i)
         .addClass("active");
@@ -54,7 +56,7 @@ export function Footer() {
             <a href="//www.cnnbfdc.com/download">下载中心</a>
           </li>
         </ul>
-        <div class="bottom-navigation__tabs">
+        <div class="bottom-navigation__tabs" ref={tabs}>
           <ul class="bottom-navigation__list clearfix">
             <li class="bottom-navigation__item active">
               <a href="#">国家部委厅网站</a>
@@ -73,7 +75,7 @@ export function Footer() {
             </li>
           </ul>
         </div>
-        <div class="bottom-navigation__tab-content">
+        <div class="bottom-navigation__tab-content" ref={content}>
           <ul class="bottom-navigation__list active clearfix">
             <li class="bottom-navigation__item">
               <a href="http://www.gov.cn/" target="_blank">

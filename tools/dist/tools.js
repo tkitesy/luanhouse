@@ -115,16 +115,18 @@
   }
 
   function Footer() {
+    var tabs = React.useRef();
+    var content = React.useRef();
     React.useEffect(function () {
-      $(".bottom-navigation__tabs a").click(function (event) {
+      $(tabs.current).find("a").click(function (event) {
         event.stopPropagation();
         event.preventDefault();
 
-        var i = $(".bottom-navigation__tabs .bottom-navigation__item").index($(this).parent());
+        var i = $(tabs.current).find(".bottom-navigation__item").index($(this).parent());
 
         $(this).parent().addClass("active").siblings().removeClass("active");
 
-        $(".bottom-navigation__tab-content .bottom-navigation__list").removeClass("active").eq(i).addClass("active");
+        $(content.current).find(".bottom-navigation__list").removeClass("active").eq(i).addClass("active");
       });
     }, []);
     return React__default.createElement(
@@ -211,7 +213,7 @@
         ),
         React__default.createElement(
           "div",
-          { "class": "bottom-navigation__tabs" },
+          { "class": "bottom-navigation__tabs", ref: tabs },
           React__default.createElement(
             "ul",
             { "class": "bottom-navigation__list clearfix" },
@@ -264,7 +266,7 @@
         ),
         React__default.createElement(
           "div",
-          { "class": "bottom-navigation__tab-content" },
+          { "class": "bottom-navigation__tab-content", ref: content },
           React__default.createElement(
             "ul",
             { "class": "bottom-navigation__list active clearfix" },
@@ -1255,15 +1257,16 @@
         items.map(function (_ref2) {
           var label = _ref2.label,
               imgUrl = _ref2.imgUrl,
-              href = _ref2.href;
+              href = _ref2.href,
+              color = _ref2.color;
 
           return React__default.createElement(
             "div",
-            { key: href, "class": "item-box__item" },
+            { key: href, "class": "item-box__item transparent" },
             React__default.createElement(
               "a",
               { href: href, target: "_blank" },
-              React__default.createElement("img", { src: imgUrl, alt: label }),
+              React__default.createElement("img", { src: imgUrl, "class": "servicehall " + (color || ''), alt: label }),
               React__default.createElement(
                 "div",
                 { "class": "txt" },

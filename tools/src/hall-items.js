@@ -5,11 +5,11 @@ function HallItem({ groupName, items }) {
     <React.Fragment>
       <h4>{groupName}</h4>
       <div class="item-box__items">
-        {items.map(({ label, imgUrl, href }) => {
+        {items.map(({ label, imgUrl, href, color }) => {
           return (
-            <div key={href} class="item-box__item">
+            <div key={href} class="item-box__item transparent">
               <a href={href} target="_blank">
-                <img src={imgUrl} alt={label} />
+                <img src={imgUrl} class={`servicehall ${color || ''}`} alt={label} />
                 <div class="txt">
                   <span>{label}</span>
                 </div>
