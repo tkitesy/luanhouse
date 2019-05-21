@@ -1237,6 +1237,131 @@
       }, rest));
   }
 
+  function HallItem(_ref) {
+    var groupName = _ref.groupName,
+        items = _ref.items;
+
+    return React__default.createElement(
+      React__default.Fragment,
+      null,
+      React__default.createElement(
+        "h4",
+        null,
+        groupName
+      ),
+      React__default.createElement(
+        "div",
+        { "class": "item-box__items" },
+        items.map(function (_ref2) {
+          var label = _ref2.label,
+              imgUrl = _ref2.imgUrl,
+              href = _ref2.href;
+
+          return React__default.createElement(
+            "div",
+            { key: href, "class": "item-box__item" },
+            React__default.createElement(
+              "a",
+              { href: href, target: "_blank" },
+              React__default.createElement("img", { src: imgUrl, alt: label }),
+              React__default.createElement(
+                "div",
+                { "class": "txt" },
+                React__default.createElement(
+                  "span",
+                  null,
+                  label
+                )
+              )
+            )
+          );
+        })
+      )
+    );
+  }
+
+  function HallItems(_ref3) {
+    var groups = _ref3.groups;
+
+    return React__default.createElement(
+      React__default.Fragment,
+      null,
+      groups.map(function (group) {
+        return React__default.createElement(HallItem, _extends({ key: group.name }, group));
+      })
+    );
+  }
+
+  function PublicityScrollPanel(_ref) {
+    var label = _ref.label,
+        items = _ref.items,
+        href = _ref.href;
+
+    var ref = React.useRef(null);
+    React.useEffect(function () {
+      var current = ref.current;
+      $(current).scrollForever({
+        continuous: false,
+        dir: "top",
+        delayTime: 2000,
+        num: 2
+      });
+      return function () {
+        $(current).off();
+      };
+    }, []);
+    return React__default.createElement(
+      "div",
+      { "class": "publicty-box" },
+      React__default.createElement(
+        "div",
+        { "class": "publicty-box__title" },
+        React__default.createElement(
+          "h4",
+          null,
+          label
+        ),
+        React__default.createElement(
+          "a",
+          { href: href },
+          "\u66F4\u591A"
+        )
+      ),
+      React__default.createElement(
+        "div",
+        { "class": "hall-publicity__content", ref: ref },
+        React__default.createElement(
+          "ul",
+          null,
+          items.map(function (item) {
+            var label = item.label,
+                href = item.href,
+                time = item.time;
+
+            return React__default.createElement(
+              "li",
+              { ke: href },
+              React__default.createElement(
+                "a",
+                { href: href },
+                React__default.createElement(
+                  "span",
+                  null,
+                  label
+                ),
+                React__default.createElement(
+                  "span",
+                  { "class": "span-right" },
+                  time
+                )
+              )
+            );
+          })
+        )
+      )
+    );
+  }
+
   function getRender(Comp) {
     return function (mountNode, props) {
       ReactDOM.render(React__default.createElement(Comp, props), mountNode);
@@ -1246,10 +1371,14 @@
   var renderPagination = getRender(Pagination);
   var renderHeader = getRender(Header);
   var renderFooter = getRender(Footer);
+  var renderHallItems = getRender(HallItems);
+  var renderPublicityScrollPanel = getRender(PublicityScrollPanel);
 
   exports.renderPagination = renderPagination;
   exports.renderHeader = renderHeader;
   exports.renderFooter = renderFooter;
+  exports.renderHallItems = renderHallItems;
+  exports.renderPublicityScrollPanel = renderPublicityScrollPanel;
 
   Object.defineProperty(exports, '__esModule', { value: true });
 

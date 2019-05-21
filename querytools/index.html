@@ -1,287 +1,144 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      六安真实房源、六安中介诚信、六安房源核验 |
+      六安市房产交易信息服务网|门户办事大厅
+    </title>
+    <link
+      rel="favicon icon "
+      type="images/x-icon"
+      href="../shared/imgs/favicon.ico"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/gzr.css" />
+    <style>
+      .item-box__item.transparent img {
+        height: 65px;
+        border-radius: 50%;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+      }
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>六安真实房源、六安中介诚信、六安房源核验 | 六安市房产交易信息服务网|门户办事大厅</title>
-  <link rel="favicon icon " type="images/x-icon" href="../shared/imgs/favicon.ico">
-  <link rel="stylesheet" href="css/styles.css">
-  <link rel="stylesheet" href="css/gzr.css">
-  <style>
-    .item-box__item.transparent img {
-      height: 65px;
-      border-radius: 50%;
-      -webkit-border-radius: 50%;
-      -moz-border-radius: 50%;
-    }
+      .servicehall.red {
+        background: #f46657;
+      }
 
-    .servicehall.red {
-      background: #F46657
-    }
+      .servicehall.blue {
+        background: #23a4f0;
+      }
 
-    .servicehall.blue {
-      background: #23A4F0
-    }
+      .servicehall.orange {
+        background: #f4a700;
+      }
 
-    .servicehall.orange {
-      background: #F4A700
-    }
+      .servicehall.green {
+        background: #82c100;
+      }
 
-    .servicehall.green {
-      background: #82C100
-    }
+      .item-box__item {
+        width: 128px;
+      }
 
-    .item-box__item {
-      width: 128px;
-    }
+      .item-box__item .txt {
+        width: 128px;
+      }
 
-    .item-box__item .txt {
-      width: 128px;
-    }
+      .hall-container {
+        height: 1155px;
+      }
+    </style>
+  </head>
 
-    .hall-container {
-      height: 1155px;
-    }
-  </style>
-</head>
-
-<body class="page-home">
-  <div class="cnnbfdc-header">
-    <div class="cnnbfdc-header__top">
-      <div class="layout-center" id="header" />
+  <body class="page-home">
+    <div class="cnnbfdc-header">
+      <div class="cnnbfdc-header__top">
+        <div class="layout-center" id="header"></div>
+      </div>
     </div>
-  </div>
-  <div class="hall-banner">
-  </div>
-  <div class="hall-container">
-    <div class="container">
-      <div class="item-box">
-        <h4>用户登录</h4>
-        <div class="item-box__items">
+    <div class="hall-banner"></div>
+    <div class="hall-container">
+      <div class="container">
+        <div class="item-box" id="item-box"></div>
 
-          <div class="item-box__item">
-            <a href="/querytools/systemvpn" target="_blank">
-              <img src="imgs/kfs.png" alt="开发企业登录">
-              <div class="txt"><span>开发企业登录</span></div>
-            </a>
-          </div>
-          <div class="item-box__item">
-            <a href="/querytools/systemvpn" target="_blank">
-              <img src="imgs/zjjg.png" alt="经纪机构登录">
-              <div><span class="txt">经纪机构登录</span></div>
-            </a>
-          </div>
-          <div class="item-box__item">
-            <a href="/querytools/systemvpn" target="_blank">
-              <img src="imgs/zlqy.png" alt="租赁企业登录">
-              <div><span class="txt">租赁企业登录</span></div>
-            </a>
-          </div>
-        </div>
-        <h4>业务办理</h4>
-        <div class="item-box__items">
+        <div class="hall-publicity publicty-box-left" id="left-panel"></div>
 
-          <div class="item-box__item">
-            <a href="//esf.cnnbfdc.com/purcahserequest/add" target="_blank">
-              <img src="imgs/xgsq.png" alt="购房资格核查申请">
-              <div><span class="txt">购房资格核查申请</span></div>
-            </a>
-          </div>
-          <div class="item-box__item">
-            <a href="http://60.190.13.218:8000/" target="_blank">
-              <img src="imgs/qyzc.png" alt="企业注册">
-              <div class="txt"><span>企业注册</span></div>
-            </a>
-          </div>
-          <div class="item-box__item">
-            <a href="//esf.cnnbfdc.com/userinfo/index" target="_blank">
-              <img src="imgs/grdl.png" alt="租赁合同备案">
-              <div><span class="txt">租赁合同备案</span></div>
-            </a>
-          </div>
-        </div>
-        <h4>信息查询</h4>
-        <div class="item-box__items">
-
-          <div class="item-box__item">
-            <a href="//newhouse.cnnbfdc.com/contract/contractquery" target="_blank">
-              <img src="imgs/spf.png" alt="商品房备案合同">
-              <div><span class="txt">商品房备案合同</span></div>
-            </a>
-          </div>
-          <div class="item-box__item">
-            <a href="//esf.cnnbfdc.com/esf-query" target="_blank">
-              <img src="imgs/clf.png" alt="二手房备案合同">
-              <div><span class="txt">二手房备案合同</span></div>
-            </a>
-          </div>
-
-          <div class="item-box__item">
-            <a href="//esf.cnnbfdc.com/verification-code" target="_blank">
-              <img src="imgs/fyyz.png" alt="二手房房源验真">
-              <div class="txt"><span>二手房房源验真</span></div>
-            </a>
-          </div>
-          <div class="item-box__item">
-            <a href="//esf.cnnbfdc.com/zl-query" target="_blank">
-              <img src="imgs/zlfyfb.png" alt="租赁备案合同">
-              <div class="txt"><span>租赁备案合同</span></div>
-            </a>
-          </div>
-          <div class="item-box__item">
-            <a href="//cx.cnnbfdc.com/agency" target="_blank">
-              <img src="imgs/zjbacx.png" alt="经纪机构查询">
-              <div class="txt"><span>经纪机构查询</span></div>
-            </a>
-          </div>
-          <div class="item-box__item">
-            <a href="//cx.cnnbfdc.com/practitioner" target="_blank">
-              <img src="imgs/zjrycx.png" alt="经纪人员查询">
-              <div class="txt"><span>经纪人员查询</span></div>
-            </a>
-          </div>
-        </div>
-        <h4>服务指南</h4>
-        <div class="item-box__items">
-          <div class="item-box__item transparent">
-            <a href="/home/services" target="_blank">
-              <img class="servicehall orange" src="imgs/guide.png" alt="办事指南">
-              <div class="txt"><span>办事指南</span></div>
-            </a>
-          </div>
-          <div class="item-box__item transparent">
-            <a href="/page/guide/newhouse/index.html" target="_blank">
-
-              <img class="servicehall green" src="imgs/flowguide.png" alt="流程指引">
-              <div class="txt"><span>流程指引</span></div>
-            </a>
-          </div>
-          <div class="item-box__item transparent">
-            <a href="/querytools/wiki" target="_blank">
-              <img class="servicehall blue" src="imgs/wiki.png" alt="交易百科">
-              <div class="txt"><span>交易百科</span></div>
-            </a>
-          </div>
-          <div class="item-box__item">
-            <a href="/download" target="_blank">
-              <img src="imgs/wdxz.png" alt="文档下载">
-              <div class="txt"><span>文档下载</span></div>
-            </a>
-          </div>
-          <div class="item-box__item transparent">
-            <a href="/home/newslist?type=%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A" target="_blank">
-              <img class="servicehall red" src="imgs/notice.png" alt="通知公告">
-              <div class="txt"><span>通知公告</span></div>
-            </a>
-          </div>
-
-
-        </div>
-      </div>
-
-      <div class="hall-publicity publicty-box-left">
-        <div class="publicty-box">
-          <div class="publicty-box__title">
-            <h4>通知公告</h4>
-            <a href="/home/newslist?type=%E9%80%9A%E7%9F%A5%E5%85%AC%E5%91%8A">更多</a>
-          </div>
-          <div class="hall-publicity__content">
-            <ul>
-              <li><a href="/home/details?guid=3e4c7863-c751-e911-9c23-d06726cc32bd"><span>关于租赁合同备案网办上线试运行的通知</span><span
-                    class="span-right">2019/3/29</span></a></li>
-              <li><a
-                  href="/home/details?guid=b27de078-c738-e911-9b04-984be16c51ff"><span>关于加强互联网房源发布管理等工作的通知</span><span
-                    class="span-right">2019/2/25</span></a></li>
-              <li><a href="/home/details?guid=6fdd9819-db25-e911-82b5-984be16cc0cf"><span>关于春节期间业务暂停服务的通告</span><span
-                    class="span-right">2019/1/29</span></a></li>
-              <li><a
-                  href="/home/details?guid=e31b74fe-6319-e911-8103-00155d011649"><span>经纪成交线上备案审核对外服务电话（2018.12.6）</span><span
-                    class="span-right">2018/12/6</span></a></li>
-              <li><a href="/home/details?guid=572f71aa-6419-e911-8103-00155d011649"><span>关于实行存量房交易业务网上办理的通知</span><span
-                    class="span-right">2018/11/22</span></a></li>
-              <li><a href="/home/details?guid=8d22e7ef-6519-e911-8103-00155d011649"><span>通知</span><span
-                    class="span-right">2018/11/21</span></a></li>
-              <li><a
-                  href="/home/details?guid=fd5bda74-6619-e911-8103-00155d011649"><span>深入开展全省住房城乡建设系统扫黑除恶专项斗争公开信及宣传标语</span><span
-                    class="span-right">2018/11/12</span></a></li>
-              <li><a href="/home/details?guid=c28debde-6619-e911-8103-00155d011649"><span>通知</span><span
-                    class="span-right">2018/9/25</span></a></li>
-              <li><a
-                  href="/home/details?guid=a816e162-f619-e911-8103-00155d011649"><span>关于落实六安地区二手房网站规范工作的通知</span><span
-                    class="span-right">2018/7/31</span></a></li>
-              <li><a
-                  href="/home/details?guid=3fea5cae-f619-e911-8103-00155d011649"><span>六安市房管中心“一周年，我最想对平台说的一句话”活动圆满结束</span><span
-                    class="span-right">2018/7/24</span></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="hall-publicity">
-        <div class="publicty-box">
-          <div class="publicty-box__title">
-            <h4>文档下载</h4>
-            <a href="/download">更多</a>
-          </div>
-          <div class="hall-publicity__content">
-            <ul>
-              <li><a
-                  href="https://src.cnnbfdc.com/upload/website/download/20190201/092533461/存量房屋买卖中介合同.pdf"><span>存量房屋买卖中介合同</span><span
-                    class="span-right">2019/2/1</span></a></li>
-              <li><a
-                  href="https://src.cnnbfdc.com/upload/website/download/20190122/093803981/shang_pin_fang_xian_fang_xiao_shou_bei_an_shen_bao_biao_.doc"><span>商品房现房销售备案申报表</span><span
-                    class="span-right">2019/1/22</span></a></li>
-              <li><a
-                  href="https://src.cnnbfdc.com/upload/website/download/20190122/093752512/shang_pin_fang_yu_shou_shen_bao_biao_.doc"><span>商品房预售申报表</span><span
-                    class="span-right">2019/1/22</span></a></li>
-              <li><a
-                  href="https://src.cnnbfdc.com/upload/website/download/20190122/092634965/2018nian_du_ning_bo_shi_fang_di_chan_ping_gu_xing_ye_you_xiu_zhu_ce_fang_di_chan_gu_jie_shi_shen_bao_biao_.docx"><span>2018年度六安市房地产评估行业优秀注册房地产估价师申报表</span><span
-                    class="span-right">2019/1/22</span></a></li>
-              <li><a
-                  href="https://src.cnnbfdc.com/upload/website/download/20190122/092442918/ning_bo_shi_jing_ji_ji_gou_bei_an_shen_qing_cai_liao_qing_dan_.docx"><span>六安市经纪机构备案申请材料清单</span><span
-                    class="span-right">2019/1/22</span></a></li>
-              <li><a
-                  href="https://src.cnnbfdc.com/upload/website/download/20190122/092421481/2018nian_du_ning_bo_shi_fang_di_chan_you_xiu_ping_gu_qi_ye_shen_bao_biao_.doc"><span>2018年度六安市房地产优秀评估企业申报表</span><span
-                    class="span-right">2019/1/22</span></a></li>
-              <li><a
-                  href="https://src.cnnbfdc.com/upload/website/download/20190122/091219309/ning_bo_shi_fang_di_chan_jing_ji_ji_gou_ji_cong_ye_ren_yuan_xin_yong_ji_lu_gong_shi_ban_fa_shi_xing_.docx"><span>六安市房地产经纪机构及从业人员信用记录公示办法试行</span><span
-                    class="span-right">2019/1/22</span></a></li>
-              <li><a
-                  href="https://src.cnnbfdc.com/upload/website/download/20190122/090940746/2018nian_du_ning_bo_shi_fang_di_chan_jing_ji_xing_ye_you_xiu_men_dian_shen_bao_biao_.docx"><span>2018年度六安市房地产经纪行业优秀门店申报表</span><span
-                    class="span-right">2019/1/22</span></a></li>
-              <li><a
-                  href="https://src.cnnbfdc.com/upload/website/download/20190122/090919778/2018nian_du_ning_bo_shi_fang_di_chan_jing_ji_xing_ye_you_xiu_jing_li_shen_bao_biao_.docx"><span>2018年度六安市房地产经纪行业优秀经理申报表</span><span
-                    class="span-right">2019/1/22</span></a></li>
-              <li><a
-                  href="https://src.cnnbfdc.com/upload/website/download/20190122/090647200/2018nian_du_ning_bo_shi_fang_di_chan_jing_ji_xing_ye_you_xiu_jing_ji_ren_shen_bao_biao__0.doc"><span>2018年度六安市房地产经纪行业优秀经纪人申报表</span><span
-                    class="span-right">2019/1/22</span></a></li>
-            </ul>
-          </div>
+        <div class="hall-publicity" id="right-panel">
         </div>
       </div>
     </div>
-  </div>
-  <div id="footer" class="region region-bottom"></div>
-  <script src="../shared/js/jquery-1.12.4.min.js"></script>
-  <script src="/src/js/scrollForever.min.js"></script>
-  <script src="../shared/js/react.min.js"></script>
-  <script src="../shared/js/react-dom.min.js"></script>
-  <script src="../tools/dist/tools.js"></script>
-  <script>
-      tools.renderHeader(document.getElementById("header"), {logoUrl: "../shared/imgs/logo.png"});
-      tools.renderFooter(document.getElementById("footer"));
-  </script>
-  <script>
-    $(function () {
-      $('.hall-publicity__content').scrollForever({
-        continuous: false,
-        dir: "top",
-        delayTime: 2000,
-        num: 2
+    <div id="footer" class="region region-bottom"></div>
+    <script src="../shared/js/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.bootcss.com/lodash.js/4.17.11/lodash.js"></script>
+    <script src="../shared/js/scrollForever.min.js"></script>
+    <script src="../shared/js/react.min.js"></script>
+    <script src="../shared/js/react-dom.min.js"></script>
+    <script src="../tools/dist/tools.js"></script>
+    <script>
+      tools.renderHeader(document.getElementById("header"), {
+        logoUrl: "../shared/imgs/logo.png"
       });
-    })
-  </script>
+      tools.renderFooter(document.getElementById("footer"));
+      tools.renderHallItems(document.getElementById("item-box"), {
+        groups: [
+          {
+            groupName: "业务办理",
+            items: [
+              {
+                label: "购房资格核查申请",
+                href: "//esf.cnnbfdc.com/purcahserequest/add",
+                imgUrl: "imgs/xgsq.png"
+              }
+            ]
+          },
+          {
+            groupName: "信息查询",
+            items: [
+              {
+                label: "二手房备案合同",
+                href: "../esf/contract-query.html",
+                imgUrl: "imgs/clf.png"
+              },
+              {
+                label: "二手房房源验真",
+                href: "../esf/contract-verification.html",
+                imgUrl: "imgs/fyyz.png"
+              },
+              {
+                label: "经纪机构查询",
+                href: "../cx/agency.html",
+                imgUrl: "imgs/zjbacx.png"
+              },
+              {
+                label: "经纪人员查询",
+                href: "../cx/practitioner.html",
+                imgUrl: "imgs/zjrycx.png"
+              }
+            ]
+          }
+        ]
+      });
 
-</body>
+      var items = _(_.range(1,10)).map(function(i){
+        return {label: "通知" + i, href: "", time: "2019/1/" + i}
+      }).value();
+      tools.renderPublicityScrollPanel(document.getElementById("left-panel"), {
+        label: "通知公告",
+        items: items,
+        href: ""
+      });
+      var items = _(_.range(1,10)).map(function(i){
+        return {label: "文档" + i, href: "", time: "2019/2/" + i}
+      }).value();
+      tools.renderPublicityScrollPanel(document.getElementById("right-panel"), {
+        label: "文档下载",
+        items: items,
+        href: ""
+      });
+
+
+    </script>
+  </body>
 </html>
