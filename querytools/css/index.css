@@ -1,0 +1,134 @@
+.nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+  color: #fff;
+  background-color: #0189FF;
+}
+body{
+  background-color: #f6f6f6;
+}
+ul{
+  margin:0;
+  padding:0;
+}
+li{
+  list-style-type:none;
+}
+.top-image{
+  margin-bottom: 20px;
+}
+.top-image img{
+  width:100%;
+}
+.guide-item {
+  font-size: 16px;
+  border-top: 2px solid #0189FF;
+  background-color: white;
+}
+.item-name{
+  padding: 10px 15px;
+}
+.select{
+  text-align: left;
+}
+.select a{
+  padding: 20px 0 20px 30px !important;
+}
+.select img{
+  margin-right: 10px;
+}
+.guide-main{
+  background-color: white;
+}
+.dashed{
+  position: absolute;
+  width: 1px;
+  height: 100%;
+  border-left: 1px dashed #0189FF;
+  left: 65px;
+  top: 50px;
+}
+.guide-title{
+  text-align: center;
+  padding: 50px 0;
+  font-size: 20px;
+  font-weight: 700;
+}
+.main-container{
+  padding: 20px 50px;
+  min-height: 50px;
+  position: relative;
+}
+.title-circle{
+  width: 30px;
+  height:30px;
+  background-color: #0189FF;
+  color: white;
+  text-align: center;
+  padding-top: 5px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.list-title span{
+  margin-left: 20px;
+}
+.list-notic {
+    padding: 10px 0 10px 54px;
+    font-weight: bold;
+    color: red;
+}
+.list-question{
+  padding: 10px 0 10px 54px;
+  color: red;
+}
+.list-question:empty,.list-answer:empty{
+  display: none;
+}
+.list-answer {
+    margin-left: 30px;
+    background-color: #f6f6f6;
+    padding: 0px 25px 10px 25px;
+}
+.blink-container{
+  padding-left: 20px;
+  border-left: 3px solid #0189FF;
+}
+.blink-container a{
+  color: #0189FF;
+}
+.answer-word{
+  color: #0189FF;
+}
+.thumbnail{
+  width:200px;
+  cursor: pointer;
+}
+.list-tip{
+  /*color:red;*/
+  font-weight:bold;
+  font-size:18px;
+  float:right;
+  padding: 10px 0 40px 100px;
+}
+.bigshow{
+  width: 1080px;
+  margin-top:5%;
+}
+.myclose{
+  float: none;
+  position: absolute;
+  right: 20%;
+  top: 5%;
+  font-size:50px;
+  color: white;
+  opacity: 1;
+}
+@media screen and (max-width: 1700px){
+  .myclose{
+    right: auto;
+    top: auto;
+  }
+}
+@media screen and (min-width:1200px) {
+  .guide-item{
+    height: 400px;
+  }
+}
