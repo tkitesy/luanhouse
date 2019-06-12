@@ -16,9 +16,14 @@ export default {
       file: pkg.main,
       format: 'umd',
       sourcemap: true,
-      name: 'tools'
+      name: 'tools',
+      globals: {
+        'react': 'React',
+        'react-dom': 'ReactDOM'
+      }
     }
   ],
+  external:['react', 'lodash', 'react-dom'],
   plugins: [
     replace({'process.env.NODE_ENV': JSON.stringify( 'production' )}),
     external(),

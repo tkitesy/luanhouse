@@ -55,5 +55,10 @@
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "@uform/antd": "^0.1.14",
+    "antd": "^3.19.1",
+    "rc-table": "^6.5.1"
+  }
 }
